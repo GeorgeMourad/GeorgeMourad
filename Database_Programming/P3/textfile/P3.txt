@@ -1,0 +1,70 @@
+MongoDB Commands for Part 1:
+
+	db.Books.count();
+
+	db.Books.aggregate([
+ 	 { $unwind: "$Book_Copies" },  // Unwind the Book_Copies array
+  	{ $group: { _id: null, tcount: { $sum: 1 } } },  // Count all the Book_Copies
+  	{ $project: { _id: 0, tcount: 1 } }  // Omit the _id field from the result
+	])
+
+
+Part 2:
+	Query 1: 
+	db.Books.find(
+ 	{ Category: "Data Science" },
+  	{ ISBN: 1, Title: 1, _id: 0 }
+	)
+
+	Query 2: 	
+	db.Books.aggregate([
+ 	{ $unwind: "$Book_Copies" },  
+  	{ $match: { "Book_Copies.Status": "Damaged" } }, 
+  	{ $group: { _id: "$ISBN" } }, 
+  	{ $count: "books_with_damaged_copies" } 
+	])
+
+	Query 3: 
+	db.Books.find(
+  	{ Category: { $in: ["Programming", "Algorithms"] } },
+  	{ _id: 0, Title: 1, Edition: 1 }
+	)
+
+	Query 4: 
+	db.Books.find(
+  	{ Price: { $gte: 30, $lte: 50 } },
+  	{ _id: 0, Title: 1 }
+	)
+
+	Query 5: 
+	db.Books.aggregate([
+  	{ $unwind: "$Book_Copies" },
+  	{ $match: { "Book_Copies.Copy#": 1, "Book_Copies.Status": "Damaged" } },
+  	{ $project: { _id: 0, ISBN: 1 } }
+	])
+
+	Query 6: 
+	db.Books.aggregate([
+  	{ $match: { Title: "Learning SQL" } },
+  	{ $unwind: "$Book_Copies" },
+  	{ $match: { "Book_Copies.Status": "Available" } },
+  	{ $count: "available_copies" }
+	])
+
+	Query 7: 
+	db.Books.find(
+ 	{ "Book_Copies.Status": { $ne: "Available" } },
+  	{ _id: 0, ISBN: 1 }
+	)
+
+	Query 8: 
+	db.Books.aggregate([
+  	{
+    	$project: {
+      	_id: 0,
+     	ISBN: 1,
+     	Title: 1,
+      	totalCopies: { $size: "$Book_Copies" }
+   	 }
+ 	 }
+	])

@@ -1,0 +1,72 @@
+db.Books.insertOne ({ISBN: "978-0131101630", Title: "The C Programming Language"
+, Edition: "2nd", Category: "Programming", Price: 45.99, Book_Copies: [{ "Copy#"
+: 1, "Status": "Available" }, { "Copy#": 2, "Status": "Checked out" }, { "Copy#"
+: 3, "Status": "Damaged" }, { "Copy#": 4, "Status": "Available" }, { "Copy#": 5,
+ "Status": "Checked out" } ]});                                                 
+                                                                                
+db.Books.insertOne ({ISBN: "978-0131103627", Title: "Introduction to Algorithms", Edition: "3rd", Category: "Algorithms", Price: 89.99, Book_Copies: [{ "Copy#":
+1, "Status": "Damaged" }, { "Copy#": 2, "Status": "Available" }, { "Copy#": 3, "Status": "Checked out" }, { "Copy#": 4, "Status": "Available" }, { "Copy#": 5, "Status": "Damaged" }, { "Copy#": 6, "Status": "Checked out" }, { "Copy#": 7, "Status": "Available" } ]});                                                      
+                                                                                
+db.Books.insertOne ({ISBN: "978-0132350884", Title: "The Pragmatic Programmer", 
+Edition: "20th Anniversary", Category: "Software Engineering", Price: 42.5, Book_Copies: [{ "Copy#": 1, "Status": "Available" }, { "Copy#": 2, "Status": "Checked out" }, { "Copy#": 3, "Status": "Damaged" }, { "Copy#": 4, "Status": "Available" }, { "Copy#": 5, "Status": "Available" }, { "Copy#": 6, "Status": "Checked out" }, { "Copy#": 7, "Status": "Damaged" } ]});                                  
+                                                                                
+db.Books.insertOne ({ISBN: "978-0132875527", Title: "Operating System Concepts",
+ Edition: "9th", Category: "Systems", Price: 79, Book_Copies: [{ "Copy#": 1, "Status": "Available" }, { "Copy#": 2, "Status": "Damaged" }, { "Copy#": 3, "Status": "Checked out" }, { "Copy#": 4, "Status": "Available" }, { "Copy#": 5, "Status": "Checked out" }, { "Copy#": 6, "Status": "Available" } ]});                  
+                                                                                
+db.Books.insertOne ({ISBN: "978-0133157456", Title: "Python for Data Analysis", 
+Edition: "1st", Category: "Data Science", Price: 42.99, Book_Copies: [{ "Copy#":
+ 1, "Status": "Available" }, { "Copy#": 2, "Status": "Checked out" }, { "Copy#":
+ 3, "Status": "Available" }, { "Copy#": 4, "Status": "Damaged" }, { "Copy#": 5, "Status": "Available" }, { "Copy#": 6, "Status": "Checked out" } ]});           
+                                                                                
+db.Books.insertOne ({ISBN: "978-0134093413", Title: "Clean Code", Edition: "1st", Category: "Programming", Price: 39.99, Book_Copies: [{ "Copy#": 1, "Status": "Checked out" }, { "Copy#": 2, "Status": "Checked out" }, { "Copy#": 3, "Status":
+"Checked out" }, { "Copy#": 4, "Status": "Checked out" }, { "Copy#": 5, "Status": "Checked out" }, { "Copy#": 6, "Status": "Damaged" } ]});                    
+                                                                                
+db.Books.insertOne ({ISBN: "978-0134190440", Title: "Data Science for Business",
+ Edition: "1st", Category: "Data Science", Price: 44.99, Book_Copies: [{ "Copy#"
+: 1, "Status": "Damaged" }, { "Copy#": 2, "Status": "Checked out" }, { "Copy#": 
+3, "Status": "Checked out" }, { "Copy#": 4, "Status": "Checked out" }, { "Copy#"
+: 5, "Status": "Checked out" }, { "Copy#": 6, "Status": "Checked out" } ]});    
+                                                                                
+db.Books.insertOne ({ISBN: "978-0134285190", Title: "Machine Learning Yearning",
+Edition: "1st", Category: "Machine Learning", Price: 12.99, Book_Copies: [{ "Copy#": 1, "Status": "Checked out" }, { "Copy#": 2, "Status": "Available" }, { "Copy#": 3, "Status": "Available" }, { "Copy#": 4, "Status": "Damaged" }, { "Copy#": 5, "Status": "Checked out" }, { "Copy#": 6, "Status": "Available" } ]});      
+                                                                                
+db.Books.insertOne ({ISBN: "978-0135957059", Title: "Python Crash Course", Edition: "2nd", Category: "Programming", Price: 38.99, Book_Copies: [{ "Copy#": 1, "Status": "Available" }, { "Copy#": 2, "Status": "Checked out" }, { "Copy#": 3, "Status": "Available" }, { "Copy#": 4, "Status": "Damaged" }, { "Copy#": 5, "Status": "Checked out" }, { "Copy#": 6, "Status": "Available" }, { "Copy#": 7, "Status": "Damaged" } ]});                                                            
+                                                                                
+db.Books.insertOne ({ISBN: "978-0199535569", Title: "The Art of Computer Programming", Edition: "4th", Category: "Algorithms", Price: 199.99, Book_Copies: [{ "Copy#": 1, "Status": "Damaged" }, { "Copy#": 2, "Status": "Checked out" }, { "Copy#": 3, "Status": "Available" }, { "Copy#": 4, "Status": "Available" }, { "Copy#": 5, "Status": "Checked out" }, { "Copy#": 6, "Status": "Available" }, { "Copy#": 7, "Status": "Damaged" } ]});                                                
+                                                                                
+db.Books.insertOne ({ISBN: "978-0201616224", Title: "Design Patterns", Edition: 
+"1st", Category: "Software Engineering", Price: 58, Book_Copies: [{ "Copy#": 1, 
+"Status": "Available" }, { "Copy#": 2, "Status": "Checked out" }, { "Copy#": 3, "Status": "Damaged" }, { "Copy#": 4, "Status": "Available" }, { "Copy#": 5, "Status": "Available" }, { "Copy#": 6, "Status": "Checked out" }, { "Copy#": 7, "Status": "Available" }, { "Copy#": 8, "Status": "Damaged" } ]});                   
+                                                                                
+db.Books.insertOne ({ISBN: "978-0201835953", Title: "Code Complete", Edition: "2nd", Category: "Software Engineering", Price: 59.99, Book_Copies: [{ "Copy#": 1,
+"Status": "Checked out" }, { "Copy#": 2, "Status": "Available" }, { "Copy#": 3,
+"Status": "Damaged" }, { "Copy#": 4, "Status": "Available" }, { "Copy#": 5, "Status": "Checked out" }, { "Copy#": 6, "Status": "Available" }, { "Copy#": 7, "Status": "Damaged" } ]});                                                         
+                                                                                
+db.Books.insertOne ({ISBN: "978-0262033848", Title: "Artificial Intelligence: A Modern Approach", Edition: "3rd", Category: "Artificial Intelligence", Price: 109.99, Book_Copies: [{ "Copy#": 1, "Status": "Available" }, { "Copy#": 2, "Status": "Checked out" }, { "Copy#": 3, "Status": "Damaged" }, { "Copy#": 4, "Status":
+ "Available" }, { "Copy#": 5, "Status": "Checked out" }, { "Copy#": 6, "Status":
+ "Damaged" } ]});                                                               
+                                                                                
+db.Books.insertOne ({ISBN: "978-0262033849", Title: "Artificial Intelligence: A Modern Approach", Edition: "3rd", Category: "AI", Price: 109.99, Book_Copies: [{
+ "Copy#": 1, "Status": "Available" }, { "Copy#": 2, "Status": "Checked out" }, {
+ "Copy#": 3, "Status": "Available" }, { "Copy#": 4, "Status": "Damaged" }, { "Copy#": 5, "Status": "Damaged" }, { "Copy#": 6, "Status": "Available" } ]});      
+                                                                                
+db.Books.insertOne ({ISBN: "978-0321154955", Title: "Refactoring", Edition: "2nd", Category: "Software Engineering", Price: 55, Book_Copies: [{ "Copy#": 1, "Status": "Checked out" }, { "Copy#": 2, "Status": "Available" }, { "Copy#": 3, "Status": "Available" }, { "Copy#": 4, "Status": "Damaged" }, { "Copy#": 5, "Status"
+: "Available" }, { "Copy#": 6, "Status": "Checked out" } ]});                   
+                                                                                
+db.Books.insertOne ({ISBN: "978-0321751041", Title: "Effective Java", Edition: "3rd", Category: "Programming", Price: 49.99, Book_Copies: [{ "Copy#": 1, "Status": "Available" }, { "Copy#": 2, "Status": "Damaged" }, { "Copy#": 3, "Status": "Checked out" }, { "Copy#": 4, "Status": "Available" }, { "Copy#": 5, "Status": "Damaged" }, { "Copy#": 6, "Status": "Available" } ]});                          
+                                                                                
+db.Books.insertOne ({ISBN: "978-0596009205", Title: "Head First Java", Edition: 
+"2nd", Category: "Programming", Price: 34.99, Book_Copies: [{ "Copy#": 1, "Status": "Checked out" }, { "Copy#": 2, "Status": "Available" }, { "Copy#": 3, "Status": "Checked out" }, { "Copy#": 4, "Status": "Available" }, { "Copy#": 5, "Status": "Damaged" }, { "Copy#": 6, "Status": "Available" } ]});                     
+                                                                                
+db.Books.insertOne ({ISBN: "978-0596517748", Title: "HTML and CSS: Design and Build Websites", Edition: "1st", Category: "Web Development", Price: 32.99, Book_Copies: [{ "Copy#": 1, "Status": "Checked out" }, { "Copy#": 2, "Status": "Available" }, { "Copy#": 3, "Status": "Damaged" }, { "Copy#": 4, "Status": "Available"
+ }, { "Copy#": 5, "Status": "Checked out" }, { "Copy#": 6, "Status": "Damaged" }
+, { "Copy#": 7, "Status": "Available" } ]});                                    
+                                                                                
+db.Books.insertOne ({ISBN: "978-1491948971", Title: "JavaScript: The Good Parts", Edition: "1st", Category: "Web Development", Price: 23.99, Book_Copies: [{ "Copy#": 1, "Status": "Available" }, { "Copy#": 2, "Status": "Checked out" }, { "Copy#": 3, "Status": "Available" }, { "Copy#": 4, "Status": "Damaged" }, { "Copy#"
+: 5, "Status": "Available" }, { "Copy#": 6, "Status": "Checked out" }, { "Copy#"
+: 7, "Status": "Available" } ]});                                               
+                                                                                
+db.Books.insertOne ({ISBN: "978-1491950357", Title: "Learning SQL", Edition: "2nd", Category: "Database", Price: 40, Book_Copies: [{ "Copy#": 1, "Status": "Available" }, { "Copy#": 2, "Status": "Damaged" }, { "Copy#": 3, "Status": "Checked out" }, { "Copy#": 4, "Status": "Available" }, { "Copy#": 5, "Status": "Checked out" }, { "Copy#": 6, "Status": "Available" }, { "Copy#": 7, "Status": "Damaged"
+ } ]});                                                                         
+
+
