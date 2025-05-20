@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Template Builder</title>
+    <link rel="stylesheet" href="css/template.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">Logo Here</div>
+      <button class="login-button" id="loginButton" onclick="login()">Log In/Sign Up</button>
+      <button class="logout-button" id="logoutButton" onclick="logout()"></button>
+    </header>
+
+    <!-- Tabs Navigation -->
+    <div class="tabs-container">
+      <div class="tabs">
+        <div class="tab active" data-content="welcome">Welcome</div>
+        <div class="tab" data-content="features">Features</div>
+        <div class="tab" data-content="tips">Tips</div>
+        <div class="tab" data-content="create">Create</div>
+        <div class="tab" data-content="explore">Explore</div>
+        <div class="tab" data-content="use">Use</div>
+      </div>
+    </div>
+
+    <!-- Content Area -->
+    <div class="content-area">
+      <!-- Welcome Tab Content -->
+      <div id="welcome" class="content active">
+        <h1>Welcome!</h1>
+        <h2>
+          Your go-to tool for crafting professional, polished emails
+          effortlessly
+        </h2>
+        <section>
+          <p>
+            Whether you're reaching out professionally or personally, writing
+            emails should be easy and effective. With our ready-made,
+            customizable email templates, you can save time, reduce
+            overthinking, and focus on what matters.
+          </p>
+          <p>
+            Start exploring templates crafted for every occasion, or create your
+            own from scratch—tailored to your style and needs, whether
+            professional or casual. If you can't come up with your own, take
+            advantage of the user-generated templates and those provided by our
+            site.
+          </p>
+          <h3>What You Can Do on This Site</h3>
+          <ul>
+            <li>
+              <strong>Learn how to write an email:</strong> Go to
+              <em>Email Writing Tips</em> for guidance on crafting emails.
+            </li>
+            <li>
+              <strong>Create your own email templates:</strong> Visit the
+              <em>Create a Template</em> page to get started.
+            </li>
+            <li>
+              <strong>Explore email templates:</strong> Check out the
+              <em>Explore Templates</em> page to find the perfect fit for your
+              needs.
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- Tips Tab Content -->
+      <div id="tips" class="content">
+        <h1>Email Writing Tips</h1>
+
+        <!-- User Instructions -->
+        <p
+          style="
+            text-align: left;
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #000000;
+          "
+        >
+          Click on each section below to learn more about writing the perfect
+          email!
+        </p>
+
+        <!-- Accordion Container -->
+        <div class="accordion">
+          <!-- Introduction -->
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h2>Introduction</h2>
+            </div>
+            <div class="accordion-content">
+              <p>
+                Writing a clear, professional email can make all the difference
+                when reaching out to professors, potential employers, or
+                colleagues. This guide will walk you through the essential parts
+                of an email, how to write it effectively, and help you get
+                started with your email templates.
+              </p>
+            </div>
+          </div>
+
+          <!-- Parts of an Email -->
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h2>Parts of an Email</h2>
+            </div>
+            <div class="accordion-content">
+              <ul>
+                <li>
+                  <strong>Subject Line:</strong> Short, specific, and to the
+                  point.
+                </li>
+                <li>
+                  <strong>Greeting:</strong> Address the recipient respectfully
+                  (e.g., "Dear Dr. Mourad").
+                </li>
+                <li>
+                  <strong>Introduction:</strong> State your purpose clearly in
+                  the first sentence.
+                </li>
+                <li>
+                  <strong>Body:</strong> Provide context and details concisely.
+                </li>
+                <li>
+                  <strong>Call to Action:</strong> Specify what you need or
+                  expect from the recipient.
+                </li>
+                <li>
+                  <strong>Closing:</strong> Use a polite sign-off (e.g., "Best
+                  regards").
+                </li>
+                <li>
+                  <strong>Signature:</strong> Include your name and, if
+                  applicable, contact information.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Writing Emails Professionally -->
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h2>Writing Emails Professionally</h2>
+            </div>
+            <div class="accordion-content">
+              <ul>
+                <li>Be concise and avoid unnecessary details.</li>
+                <li>Use proper grammar, punctuation, and spelling.</li>
+                <li>Avoid overly casual language (e.g., "Hey" or "LOL").</li>
+                <li>Always proofread before sending.</li>
+                <li>
+                  Maintain a professional tone, even if the email is casual.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Examples of Professional Emails -->
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h2>Examples of Professional Emails</h2>
+            </div>
+            <div class="accordion-content">
+              <h3>1. Academic Inquiry</h3>
+              <p><strong>Subject:</strong> Request for Appointment</p>
+              <p>
+                <strong>Dear Professor Mourad,</strong><br />
+                I hope this email finds you well. I am writing to request an
+                appointment to discuss my research proposal for the upcoming
+                semester. Please let me know your availability next week, and I
+                will do my best to accommodate your schedule.<br /><br />
+                Thank you for your time and guidance.<br />
+                <strong>Best regards,</strong><br />
+                Jane Doe<br />
+                (Student ID: 123456789)<br />
+              </p>
+
+              <h3>2. Job Application Follow-Up</h3>
+              <p><strong>Subject:</strong> Follow-Up on Job Application</p>
+              <p>
+                <strong>Dear Mr. Duong,</strong><br />
+                I hope you're doing well. I am following up on my application
+                for the Software Engineer position submitted on October 25th. I
+                wanted to kindly inquire if there are any updates on the hiring
+                process. I remain very enthusiastic about the opportunity to
+                contribute to your team and would be happy to provide any
+                additional information if needed.<br /><br />
+                Thank you for your time, and I look forward to hearing from
+                you.<br />
+                <strong>Sincerely,</strong><br />
+                John Smith<br />
+              </p>
+
+              <h3>3. Networking Introduction</h3>
+              <p><strong>Subject:</strong> Introduction - [Your Name]</p>
+              <p>
+                <strong>Hi Mr. Nguyen,</strong><br />
+                My name is Emily Davis, and I am a recent graduate in Marketing
+                from George Mason University. I came across your profile on
+                LinkedIn and was impressed by your work at XYZ Agency. I am
+                eager to learn more about your experiences and would appreciate
+                the opportunity to connect or schedule a brief call at your
+                convenience.<br /><br />
+                Thank you for your time, and I look forward to hearing from
+                you.<br />
+                <strong>Warm regards,</strong><br />
+                Emily Davis<br />
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Questions to Ask Yourself -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h2>Questions to Ask Yourself</h2>
+          </div>
+          <div class="accordion-content">
+            <ul>
+              <li>What is the purpose of this email?</li>
+              <li>Who is the recipient, and how formal should my tone be?</li>
+              <li>What key details need to be included?</li>
+              <li>
+                What do I want the recipient to do after reading this email?
+              </li>
+              <li>Is this the best form of communication for this purpose?</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Common Mistakes -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h2>Common Mistakes</h2>
+          </div>
+          <div class="accordion-content">
+            <ul>
+              <li>Writing overly long emails that lack a clear purpose.</li>
+              <li>Using vague or generic subject lines.</li>
+              <li>Failing to proofread for typos or grammatical errors.</li>
+              <li>Including unnecessary or irrelevant details.</li>
+              <li>Using an inappropriate tone for the recipient or context.</li>
+              <li>
+                Forgetting to include a clear call to action or next steps.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="features" class="content">
+        <h1>Explore the Features</h1>
+        <section id="intro">
+          <p>
+            Our platform is designed to make email writing simple, efficient,
+            and professional. Here's a breakdown of everything you can do on
+            this site.
+          </p>
+        </section>
+
+        <!-- Features List -->
+        <section id="features-list">
+          <h2>What You Can Do Here</h2>
+          <ul>
+            <li>
+              <strong>Learn Email Writing Tips:</strong> Access practical advice
+              on how to craft professional, effective emails.
+            </li>
+            <li>
+              <strong>Create Your Own Template:</strong> Use our simple form to
+              design an email template tailored to your needs. Save it as a
+              draft or publish it for future use.
+            </li>
+            <li>
+              <strong>Explore Templates:</strong> Browse a variety of pre-made
+              templates for academic, professional, and casual use. If you can't
+              come up with your own, check out templates made by other users in
+              the <em>Explore Templates</em> section.
+            </li>
+
+            <li>
+              <strong>Modify Existing Templates:</strong> Customize any pre-made
+              template to better fit your unique situation.
+            </li>
+          </ul>
+        </section>
+
+        <!-- Benefits Section -->
+        <section id="benefits">
+          <h2>Why Use Our Features?</h2>
+          <p>
+            Our tools are designed to save you time, reduce stress, and help you
+            communicate effectively, whether you're writing to professors,
+            potential employers, or peers. If you're feeling stuck or unsure,
+            the <em>Explore Templates</em> section is the perfect place to find
+            inspiration from templates created by other users and the site
+            itself.
+          </p>
+        </section>
+      </div>
+
+      <!-- Create Tab Content -->
+      <div id="create" class="content">
+        <h1>Create Your Email Template</h1>
+        <p>
+          Use the fields below to create your own email template. Add
+          placeholders for editable parts using the
+          <strong>[INPUT]</strong> tool in any of the fields below.
+        </p>
+
+        <!-- [INPUT] Tool -->
+        <div id="toolbar" style="text-align: center; margin-bottom: 20px">
+          <button type="button" id="input-button">[INPUT]</button>
+        </div>
+
+        <!-- Form Section -->
+        <section id="create-template">
+          <form id="template-form">
+            <!-- Subject -->
+            <div class="form-group">
+              <label for="subject">Subject:</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Enter the subject"
+                required
+              />
+            </div>
+
+            <!-- Greeting -->
+            <div class="form-group">
+              <label for="greeting">Greeting:</label>
+              <input
+                type="text"
+                id="greeting"
+                name="greeting"
+                placeholder="Enter the greeting (e.g., Dear [Name])"
+                required
+              />
+            </div>
+
+            <!-- Body -->
+            <div class="form-group">
+              <label for="body">Body:</label>
+              <textarea
+                id="body"
+                name="body"
+                rows="6"
+                placeholder="Enter the body of your email"
+              ></textarea>
+            </div>
+
+            <!-- Closing -->
+            <div class="form-group">
+              <label for="closing">Closing:</label>
+              <textarea
+                id="closing"
+                name="closing"
+                rows="3"
+                placeholder="e.g., Thank you for your time, Looking forward to hearing from you, etc."
+                required
+              ></textarea>
+            </div>
+
+            <!-- Signature -->
+            <div class="form-group">
+              <label for="signature">Signature:</label>
+              <textarea
+                id="signature"
+                name="signature"
+                rows="3"
+                placeholder="e.g., Sincerely, Best regards, and then Your Name, Title, Contact Info"
+              ></textarea>
+            </div>
+          </form>
+
+          <!-- Preview Section -->
+          <div id="preview">
+            <h2>Preview</h2>
+            <div id="email-preview" style="white-space: pre-line">
+              <!-- Dynamically generated preview of the email -->
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div id="actions" style="text-align: center; margin-top: 20px">
+            <button type="reset" form="template-form">Clear All</button>
+            <button type="button" id="save-button">Save for Later</button>
+            <button type="button" id="preview-button">Preview</button>
+            <button type="button" id="publish-button">Publish</button>
+          </div>
+        </section>
+      </div>
+      
+ <!-- Explore Tab Content -->
+<div id="explore" class="content">
+  <div class="explore-header">
+    <h1>Explore Templates</h1>
+    <p>Discover templates created by other users or provided by the site. Save and organize them into folders.</p>
+  </div>
+
+  <div class="explore-container">
+    <!-- Sidebar for Folders -->
+    <aside id="folder-sidebar">
+      <h2>Folders</h2>
+      <button id="create-folder">+ Create Folder</button>
+      <button id="delete-folder">- Delete Folder</button>
+      <ul id="folder-list">
+        <li class="folder-item">My Templates</li>
+        <li class="folder-item">Saved Templates</li>
+      </ul>
+    </aside>
+
+    <!-- Template List -->
+    <main id="template-list-container">
+      <h2>Templates</h2>
+      <ul id="template-list">
+        <!-- Dynamically Populated -->
+        <li class="no-templates-message hidden">No templates found.</li>
+      </ul>
+    </main>
+  </div>
+
+  <!-- Create Folder Popup -->
+  <div id="create-folder-popup" class="popup hidden">
+    <h3>Create a New Folder</h3>
+    <input type="text" id="folder-name-input" placeholder="Enter folder name">
+    <div class="popup-actions">
+      <button id="confirm-folder">Confirm</button>
+      <button id="cancel-folder">Cancel</button>
+    </div>
+  </div>
+
+  <!-- Template Preview Modal -->
+  <div id="preview-modal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Template Preview</h2>
+      <div id="template-preview-content" class="email-preview">
+        <!-- Styled email content dynamically inserted -->
+      </div>
+      <div class="modal-actions">
+        <button id="back-button">Back</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      <!-- Placeholder Content for Other Tabs -->
+      <div id="use" class="content">Use Templates Content</div>
+    </div>
+    <!-- JavaScript -->
+
+    <script src="js/template.js"></script>
+  </body>
+</html>

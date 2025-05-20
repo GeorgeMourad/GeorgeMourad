@@ -1,0 +1,243 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const tabs = document.querySelectorAll('.tab');
+    const contents = document.querySelectorAll('.content');
+  
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Remove 'active' class from all tabs and content
+        document.querySelector('.tab.active').classList.remove('active');
+        document.querySelector('.content.active').classList.remove('active');
+  
+        // Add 'active' class to the clicked tab and corresponding content
+        tab.classList.add('active');
+        const contentId = tab.getAttribute('data-content');
+        document.getElementById(contentId).classList.add('active');
+      });
+    });
+  });
+  
+  document.addEventListener('DOMContentLoaded', () => {
+    const accordionItems = document.querySelectorAll('.accordion-item');
+  
+    accordionItems.forEach(item => {
+      const header = item.querySelector('.accordion-header');
+  
+      header.addEventListener('click', () => {
+        // Close all other accordion items
+        accordionItems.forEach(i => {
+          const content = i.querySelector('.accordion-content');
+          if (content.classList.contains('active') && i !== item) {
+            content.classList.remove('active');
+          }
+        });
+  
+        // Toggle current accordion item
+        const content = item.querySelector('.accordion-content');
+        content.classList.toggle('active');
+      });
+    });
+  });
+  
+  // Insert [INPUT] Placeholder
+  document.getElementById('input-button').addEventListener('mousedown', (event) => {
+    event.preventDefault();
+  
+    const activeField = document.activeElement;
+    if (activeField && (activeField.tagName === 'TEXTAREA' || activeField.tagName === 'INPUT')) {
+      const cursorPos = activeField.selectionStart || 0;
+      const textBefore = activeField.value.substring(0, cursorPos);
+      const textAfter = activeField.value.substring(cursorPos);
+      activeField.value = `${textBefore}[INPUT]${textAfter}`;
+      activeField.focus();
+      activeField.selectionStart = activeField.selectionEnd = cursorPos + 7;
+    } else {
+      alert('Click inside a field where you want to insert [INPUT].');
+    }
+  });
+  
+  // Save for Later
+  document.getElementById('save-button').addEventListener('click', () => {
+    alert('Template saved for later!');
+  });
+  
+  // Publish Template
+  document.getElementById('publish-button').addEventListener('click', () => {
+    alert('Template published!');
+  });
+  
+  // Generate Preview
+  document.getElementById('preview-button').addEventListener('click', () => {
+    const subject = document.getElementById('subject').value || '[No Subject]';
+    const greeting = document.getElementById('greeting').value || '[No Greeting]';
+    const body = document.getElementById('body').value || '[No Body]';
+    const closing = document.getElementById('closing').value || '[No Closing]';
+    const signature = document.getElementById('signature').value || '[No Signature]';
+  
+    const preview = `
+  Subject: ${subject}
+  
+  ${greeting}
+  
+  ${body}
+  
+  ${closing}
+  
+  ${signature}
+    `;
+  
+    document.getElementById('email-preview').textContent = preview;
+  });
+  
+  // explore templates
+  
+  document.addEventListener('DOMContentLoaded', () => {
+  const folderList = document.getElementById('folder-list');
+  const templateList = document.getElementById('template-list');
+  const createFolderPopup = document.getElementById('create-folder-popup');
+
+  const templates = [
+    { tid: 1, subject: 'Meeting Invitation', body: 'Dear [Name],\nPlease join us for...' },
+    { tid: 2, subject: 'Thank You Note', body: 'Dear [Name],\nThank you for...' }
+  ];
+
+    
+  // Populate Templates
+  const populateTemplates = () => {
+
+    const request = new Request("http://localhost:8080/get-all-templates", {
+      method: "GET",
+  });
+
+  let response = fetch(request)
+      .then(response => response.json())
+      .then(data => {
+          templateList.innerHTML = '';
+          data.forEach((template) => {
+            if(template.publicly || (!template.publicly && localStorage.getItem("ID") == template.uid)){
+              let li = document.createElement("li")
+              li.classList.add("template-card")
+              li.innerHTML = `
+                <span class="template-title">${template.subject}</span>
+                <div>
+                  <button class="preview-button" data-id="${template.tid}">Preview</button>
+                </div>
+              `; 
+              templateList.appendChild(li)
+            }
+
+          })
+      })
+      .catch(function(){
+
+      });
+  };
+
+  populateTemplates();
+
+  // Show Create Folder Popup
+  document.getElementById('create-folder').addEventListener('click', () => {
+    createFolderPopup.classList.remove('hidden');
+  });
+
+  // Confirm Folder Creation
+  document.getElementById('confirm-folder').addEventListener('click', () => {
+    const folderName = document.getElementById('folder-name-input').value.trim();
+    if (folderName) {
+      const li = document.createElement('li');
+      li.textContent = folderName;
+      li.classList.add('folder-item');
+      folderList.appendChild(li);
+      document.getElementById('folder-name-input').value = ''; // Clear input
+      createFolderPopup.classList.add('hidden');
+    }
+  });
+
+  // Cancel Folder Creation
+  document.getElementById('cancel-folder').addEventListener('click', () => {
+    document.getElementById('folder-name-input').value = ''; // Clear input
+    createFolderPopup.classList.add('hidden');
+  });
+
+  // Delete Folder
+  document.getElementById('delete-folder').addEventListener('click', () => {
+    const selectedFolder = document.querySelector('#folder-list .folder-item.selected');
+    if (!selectedFolder) {
+      alert('Please select a folder to delete.');
+      return;
+    }
+
+    if (['My Templates', 'Saved Templates'].includes(selectedFolder.textContent)) {
+      alert('This folder cannot be deleted.');
+      return;
+    }
+
+    if (confirm(`Are you sure you want to delete the folder "${selectedFolder.textContent}"?`)) {
+      selectedFolder.remove();
+    }
+  });
+
+  // Handle Folder Selection
+  folderList.addEventListener('click', (e) => {
+    if(e.target.classList.contains('folder-item') && e.target.classList.contains('selected')){
+      e.target.classList.remove('selected')
+    }
+    else if (e.target.classList.contains('folder-item')) {
+      document.querySelectorAll('.folder-item').forEach(folder => folder.classList.remove('selected'));
+      e.target.classList.add('selected');
+    }
+    
+  });
+
+  // Handle Template Preview
+  document.addEventListener('click', (e) => {
+    if (e.target.classList.contains('preview-button')) {
+      const templateID = e.target.dataset.id;
+
+      const request = new Request("http://localhost:8080/get-template/" + templateID, {
+        method: "GET",
+      });
+
+      let response = fetch(request)
+        .then(response => response.json())
+        .then(data => {
+            let previewContent = document.getElementById("template-preview-content")
+            previewContent.innerHTML = `<strong>${data.subject}</strong><br><br>${data.introduction}<br><br>${data.action}<br><br>${data.closing}<br><br>${data.signature}`;
+            document.getElementById("preview-modal").classList.remove('hidden')
+        })
+      .catch(function(){
+
+      });
+    }
+  });
+
+  // Close Preview Modal
+  document.getElementById('back-button').addEventListener('click', () => {
+    document.getElementById('preview-modal').classList.add('hidden');
+  });
+});
+
+// Login Button
+
+function login(){
+  window.location.href = "http://localhost:8080"
+  window.location.replace("http://localhost:8080")
+}
+
+function logout(){
+  localStorage.removeItem("ID")
+  window.location.href = "http://localhost:8080"
+  window.location.replace("http://localhost:8080")
+}
+
+function checkLogin(){
+  if(localStorage.getItem("ID") == null){
+    document.getElementById("loginButton").classList.remove('hidden')
+    document.getElementById("logoutButton").classList.add('hidden')
+  }
+  else{
+    document.getElementById("loginButton").classList.add('hidden')
+    document.getElementById("logoutButton").classList.remove('hidden')
+  }
+}
+checkLogin()
+

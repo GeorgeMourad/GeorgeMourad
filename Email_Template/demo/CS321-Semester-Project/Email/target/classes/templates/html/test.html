@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="js/test.js"></script>
+    <link rel="stylesheet" href="css/test.css" />
+    <title>Email Template Application</title>
+</head>
+<body>
+    <label for="currID", id ="currID">ID:</label>
+    <p></p>
+
+    <label for="user">Username:</label>
+    <input type="text" id="user" name="user">
+    <label for="pass">Password:</label>
+    <input type="text" id="pass" name="pass">
+
+    <button id="login">Login</button>
+
+    <p>get users</p>
+
+    <div id="getBtn" class="get-btn">
+        <button class="getuser">get users</button>
+      </div>
+
+    <p>delete user</p>
+    
+    <label for="delUID">User ID:</label>
+    <input type="text" id="delUID" name="delUID">
+
+    <div id="delBtn" class="del-btn">
+        <button class="deluser">Delete</button>
+      </div>
+
+      <p>add user</p>
+    
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+    <label for="password">Password:</label>
+    <input type="text" id="password" name="password">
+
+    <div id="addBtn" class="add-btn">
+        <button class="adduser">Create</button>
+      </div>
+
+    <p>Create template</p>
+
+    <div id="addTemplate" class="add-template">
+        <label for="header">Header:</label>
+        <input type="text" id="header" name="header">
+
+        <label for="action">Action:</label>
+        <input type="text" id="action" name="action">
+
+        <label for="closing">Closing:</label>
+        <input type="text" id="closing" name="closing">
+
+        <label for="signature">Signature:</label>
+        <input type="text" id="signature" name="signature">
+
+    </div>
+    <button class="addTemp">Create</button>
+
+    <button id="logout">logout</button>
+
+    <ul class="user-list" id="userList"></ul>
+
+    <p>Delete template</p>
+    <label for="delTID">Template ID:</label>
+    <input type="text" id="delTID" name="delTID">
+
+    <div class="del-tbtn">
+      <button class="del-temp" id="delTBtn">Delete</button>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,619 @@
+/* General Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #2c2c2c; /* Dark gray background */
+  color: black;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e6e6e6; /* Matches content box */
+  padding: 15px 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+header .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+header .login-button {
+  background-color: #ffd700; /* Placeholder yellow */
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  max-width: 200px; /* Prevent button from becoming too wide */
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Keep text inside the button */
+  text-overflow: ellipsis; /* Add ellipsis if text overflows */
+}
+
+header .login-button:hover {
+  background-color: #e6c200; /* Slightly darker yellow on hover */
+}
+
+header .logout-button{
+  background-color: #ffd700; /* Placeholder yellow */
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  max-width: 200px; /* Prevent button from becoming too wide */
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Keep text inside the button */
+  text-overflow: ellipsis; /* Add ellipsis if text overflows */
+}
+
+header .logout-button:hover {
+  background-color: #e6c200; /* Slightly darker yellow on hover */
+}
+
+/* Tabs Container */
+.tabs-container {
+  margin-top: 90px; /* Space below header */
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.tabs {
+  display: flex;
+  background-color: transparent; /* Matches the page background */
+  width: 80%; /* Matches content box width */
+  max-width: 1200px; /* Prevent it from growing too large */
+  justify-content: flex-start; /* Align tabs to the left */
+  margin: 0 auto; /* Center tabs */
+}
+
+.tab {
+  background-color: #d3d3d3; /* Placeholder light gray for inactive tabs */
+  color: black;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px 5px 0 0; /* Slightly rounded top corners */
+  flex: 1; /* Ensures all tabs are equal width */
+  border-right: 1px solid #c7c7c7; /* Separator between tabs */
+  transition: background-color 0.3s ease;
+}
+
+.tab:last-child {
+  border-right: none; /* Remove border for the last tab */
+}
+
+.tab.active {
+  background-color: #e6e6e6; /* Matches content box */
+  font-weight: bold;
+  border-bottom: 2px solid #e6e6e6; /* Seamlessly connects to content box */
+}
+
+/* Content Area */
+.content-area {
+  background-color: #e6e6e6; /* Light gray background */
+  margin: 0 auto;
+  padding-top: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 1rem;
+  width: 80%; /* Matches tabs width */
+  max-width: 1200px; /* Prevent it from growing too large */
+  border-radius: 0px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Floating shadow */
+  height: 50rem;
+  margin-top: -2px; /* Seamlessly merges with active tab */
+  overflow: hidden; /* Ensures content stays within the box */
+  box-sizing: border-box;
+}
+
+.content {
+  display: none; /* Hide inactive content */
+  margin: 0; /* Reset margin to prevent overflow */
+  padding: 0; /* Reset padding */
+  overflow: auto; /* Ensures scrolling if content exceeds height */
+}
+
+.content.active {
+  display: block; /* Show only the active content */
+}
+
+/* Accordion */
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Ensures consistent spacing between all items */
+  margin: 20px 0; /* Margin above and below the accordion */
+}
+
+.accordion-item {
+  border: 1px solid #ddd;
+  border-radius: 25px; /* Keep pill shape */
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-bottom: 10px;
+}
+
+.accordion-header {
+  background-color: #f9f9f9;
+  padding: 0px 20px; /* Reduced vertical padding for a shorter button */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 14px; /* Slightly smaller font size */
+  font-weight: bold;
+  border-radius: 25px; /* Keep pill shape */
+  transition: background-color 0.3s ease;
+}
+
+.accordion-content {
+  display: none;
+  padding: 5px 20px;
+  background-color: #fff;
+  border-radius: 25px; /* Match border-radius */
+  animation: slideDown 0.5s ease-in-out;
+}
+
+.accordion-content.active {
+  display: block;
+}
+
+/* Create Tab */
+/* Form Section */
+#template-form {
+  max-width: 600px;
+  margin: 0 auto 40px; /* Centered and spaced from the preview */
+  background-color: #fefefe; /* White background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+}
+
+.form-group {
+  margin-bottom: 25px; /* Increased spacing between text boxes */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333; /* Dark text for readability */
+}
+
+.form-group input,
+.form-group textarea {
+  width: calc(100% - 20px); /* Ensure fields don't touch edges */
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #ffd700;
+  box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+  outline: none;
+}
+
+
+#preview {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+}
+
+#preview h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #007bff;
+  text-align: center;
+}
+
+#email-preview {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+  white-space: pre-wrap; /* Preserve line breaks */
+}
+
+.use-container{
+  width: 20rem;
+  height: 20rem;
+}
+
+#preview1 {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+}
+
+#preview1 h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #007bff;
+  text-align: center;
+}
+
+#email-preview1 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+  white-space: pre-wrap; /* Preserve line breaks */
+}
+
+/* Input and Textarea Styling */
+#template-form input,
+#template-form textarea {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+#template-form textarea:focus {
+  border-color: #ffd700;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+  outline: none;
+}
+
+/* Buttons */
+#toolbar button,
+#actions button {
+  background-color: #ffd700;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  margin: 10px 5px;
+  transition: background-color 0.3s ease;
+}
+
+#toolbar button:hover,
+#actions button:hover {
+  background-color: #e6c200;
+}
+
+/* Keyframes */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 500px;
+  }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .tabs,
+  .content-area {
+    width: 90%; /* Shrink content box and tabs to fit smaller screens */
+    padding: 20px; /* Adjust padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .tabs,
+  .content-area {
+    width: 95%; /* Further shrink for very small screens */
+    padding: 15px; /* Reduced padding */
+  }
+}
+
+/* Content Area */
+.content {
+  height: 700px; /* Expanded height */
+}
+
+.explore-container {
+  display: flex;
+  height: 100%;
+  margin-top: 0;
+}
+
+/* Folder Sidebar */
+#folder-sidebar {
+  width: 30%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+#folder-list {
+  list-style: none;
+  padding: 0;
+  width: 90%
+}
+
+.folder-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #e6e6e6;
+}
+
+.folder-item:hover {
+  background-color: #dcdcdc;
+}
+
+.folder-item.selected {
+  background-color: #4a4a4a; /* Dark background for selected state */
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Template List */
+#template-list-container {
+  width: 80%;
+  padding: 20px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+#template-list {
+  overflow: auto;
+  list-style: none;
+  height: 80%;
+  padding: 0;
+}
+
+.template-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+}
+
+.template-card .template-subject {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.template-card button {
+  margin-left: 10px;
+}
+
+/* Modals and Popups */
+.modal,
+.popup {
+  position: fixed; /* Fixed position to overlay directly */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  z-index: 1000; /* Ensure popups are on top of everything */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.popup.hidden,
+.modal.hidden {
+  display: none;
+}
+
+.hidden{
+  display: none;
+}
+
+.popup-actions button {
+  margin: 10px 5px;
+}
+
+#folder-name-input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+#preview-modal {
+  width: 70%;
+  height: auto;
+}
+
+/* Delete Folder Popup */
+#delete-folder-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  z-index: 1000;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#delete-folder-popup .popup-actions {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#delete-folder-popup .popup-actions button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#delete-folder-popup .popup-actions button:first-child {
+  background-color: #d9534f;
+  color: #fff;
+}
+
+#delete-folder-popup .popup-actions button:last-child {
+  background-color: #5bc0de;
+  color: #fff;
+}
+
+/* Select Folder Popup */
+#select-folder-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  z-index: 1000;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#select-folder-popup .popup-actions {
+  margin-top: 15px;
+  text-align: center;
+}
+
+#select-folder-popup .popup-actions button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #5bc0de;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Folder Accordion */
+.folder-contents {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 15px; /* Indent for nested items */
+}
+
+.folder-contents.hidden {
+  display: none; /* Hide folder contents */
+}
+
+.empty-folder-message {
+  font-style: italic;
+  color: #999;
+}
+
+.template-in-folder {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  width: 10rem;
+}
+
+.template-in-folder.selected {
+  background-color: black;
+  color: white;
+}
+
+/* Style for template-in-folder items */
+.template-in-folder {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+}
+
+/* Style for the delete template button */
+.delete-template-button {
+  position: absolute;
+  right: -25px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #d9534f;
+  color: #fff;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-template-button:hover {
+  background-color: #c9302c;
+}
+
+.left-align {
+  display: inline-block;                      
+}
+
+#make-public{
+  margin-left: 3.5rem;
+}
+
+#public-label{
+  margin-left: 10rem;
+}
+
+
+.copy-button{
+  background-color: #ffd700;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  margin: 10px 5px;
+  transition: background-color 0.3s ease;
+}

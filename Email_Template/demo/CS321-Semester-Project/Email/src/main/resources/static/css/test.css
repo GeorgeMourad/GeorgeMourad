@@ -1,0 +1,24 @@
+html{
+    background-color: gray;
+}
+
+.get-user{
+    width: 100px;
+    height: 100px;
+}
+
+.add-template{
+    background-color: azure;
+    width: 250px;
+    height: 250px;
+}
+
+.user-list{
+    list-style-type: none;
+    background: azure;
+    width: 250px;
+    text-align: left;
+    font-size: 1rem;
+    max-height: 5vh;
+    overflow-y: scroll;
+}

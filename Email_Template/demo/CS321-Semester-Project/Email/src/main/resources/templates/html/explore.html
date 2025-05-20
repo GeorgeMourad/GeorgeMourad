@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="js/explore.js"></script>
+    <link rel="stylesheet" href="css/explore.css"/>
+    <title>Responsive Tabbed Interface</title>
+</head>
+<body>
+    <div class="tab-container">
+        <div class="tabs">
+            <div class="tab active" id="tab1-tab" onclick="openTab(event, 'tab1')">Welcome</div>
+            <div class="tab" id="tab2-tab" onclick="openTab(event, 'tab2')">Create Template</div>
+            <div class="tab" id="tab3-tab" onclick="openTab(event, 'tab3')">Explore Template</div>
+            <div class="tab" id="tab4-tab" onclick="openTab(event, 'tab4')">Tab 4</div>
+            <div class="tab" id="tab5-tab" onclick="openTab(event, 'tab5')">Email Writing Guide</div>
+            <button class= logout-btn id="logoutBtn" onclick="logout()">logout</button>
+        </div>
+        <div id="tab1" class="content">
+            <h2>Welcome</h2>
+            <p>Whether you're reaching out professionally or personally, writing emails should be easy and effective. With our ready-made, customizable email templates, you can save time, reduce overthinking, and focus on what matters.</p>
+            <p>Start exploring templates crafted for every occasion or create your own from scratch—tailored to your style and needs.</p>
+        </div>
+        <div id="tab2" class="content hidden">
+            <div class="template-container">
+                <div class="toolbar">
+                    <button><b>B</b></button>
+                    <button><i>I</i></button>
+                    <button><u>U</u></button>
+                </div>
+
+                <div class="field">
+                    <label>Email Subject (Editable)</label>
+                    <input type="text" id="email-subject" placeholder="Subject of your email">
+                </div>
+
+                <p>Text formatting tools / need logos, not implemented yet</p>
+
+                <div class="field">
+                    <label>Introduction <span class="help-icon">?<span class="tooltip">Start with a greeting and briefly introduce the email’s purpose. Example: "Dear [Name], I hope this message finds you well. I'm reaching out regarding..."</span></span></label>
+                    <textarea id="introduction" placeholder="Dear [name],"></textarea>
+                </div>
+
+                <div class="field">
+                    <label>Call to Action <span class="help-icon">?<span class="tooltip">Provide a clear call to action. Example: "Please let me know if you're available for a meeting next week."</span></span></label>
+                    <textarea id="call-to-action" placeholder="Please let me know if..."></textarea>
+                </div>
+
+                <div class="field">
+                    <label>Closing <span class="help-icon">?<span class="tooltip">Conclude with a closing statement. Example: "Thank you for your time and consideration."</span></span></label>
+                    <textarea id="closing" placeholder="Thank you for your time..."></textarea>
+                </div>
+
+                <div class="field">
+                    <label>Signature <span class="help-icon">?<span class="tooltip">Include your name and contact details. Example: "Best regards, [Your Name]"</span></span></label>
+                    <textarea id="signature" placeholder="Best regards, [Your Name]"></textarea>
+                </div>
+
+                <div class="right-align">
+                    <label><input type="checkbox" id="make-public"> Make this template available to others</label>
+                </div>
+
+                <div class="button-container">
+                    <button onclick="clearFields()">Clear</button>
+                    <button onclick="saveDraft()">Save Draft</button>
+                    <button onclick="publishTemplate()">Publish</button>
+                </div>
+            </div>
+        </div>
+        <div id="tab3" class="content hidden">
+            <label class="title-bar" id="titleBar">Title:</label>
+            
+            <div class="template-list-container">
+                <input type="text" class="search-bar" id="searchBar" onkeyup="searchTemplate()">
+                <div class="template-list">
+                    <ul class="template-list-items" id="templateListItems">
+                    
+                    </ul>
+                </div>
+            </div>
+            <div class=" display-template-container">
+                <div class="display-template" id="displayTemplate">
+                    <label class="display-part">Subject:</label>
+                    <label class="display-res" id="displaySubject"></label>
+                    <label class="display-part">Introduction:</label>
+                    <label class="display-res" id="displayIntroduction"></label>
+                    <label class="display-part">Call to Action:</label>
+                    <label class="display-res" id="displayAction"></label>
+                    <label class="display-part">Closing:</label>
+                    <label class="display-res" id="displayClosing"></label>
+                    <label class="display-part">Signature:</label>
+                    <label class="display-res" id="displaySignature"></label>
+                </div>
+            </div>
+            <div class = buttons>
+                <button class="delete-button" id="deleteButton" onclick="deleteTemplate()">Delete</button>
+            </div>
+
+        </div>
+        <div id="tab4" class="content hidden">Content for Tab 4</div>
+        <div id="tab5" class="content hidden">
+            <h2>Email Writing Guide</h2>
+            <p><strong>Parts of an Email:</strong></p>
+            <ol>
+                <li><strong>Subject Line:</strong> A concise summary of your email's purpose.</li>
+                <li><strong>Greeting:</strong> Start with a friendly or professional salutation, such as "Dear [Name]" or "Hi [Name]."</li>
+                <li><strong>Body:</strong>
+                    <ul>
+                        <li><strong>Introduction:</strong> Briefly introduce the purpose of your email.</li>
+                        <li><strong>Details:</strong> Provide the main content or details relevant to your message.</li>
+                        <li><strong>Call to Action:</strong> Specify what you want the recipient to do next.</li>
+                    </ul>
+                </li>
+                <li><strong>Closing:</strong> Conclude politely with a phrase like "Thank you for your time."</li>
+                <li><strong>Signature:</strong> Include your name and contact information.</li>
+            </ol>
+            <p>Refer to our templates for inspiration and tips to save time!</p>
+        </div>
+    </div>
+</body>
+</html>
