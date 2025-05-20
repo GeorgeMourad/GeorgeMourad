@@ -1,0 +1,17 @@
+How to compile:
+Once Zookeeper is installed, it must be started in the background in order to create
+servers that can be the master. Using "bin/zkServer.sh start" will start the 
+zookeeper server. 
+To create server instances the ft-exhoserver.py file within the ft-echo folder should be run to begin a new server process. To open several servers, you need to have several terminals to create new instances.
+
+Tests conducted:
+
+I conducted tests to ensure the servers were supported by zookeeper by 
+creating a single instance,
+and then also one test with two instances to see if the waiting server would wait.
+
+I tested to see if killing a server and restarting it would add it back into the 
+pool of potential master servers after another server takes over.
+
+Finally I tested restarting the zookeeper service to see if the servers would continue
+as expected.

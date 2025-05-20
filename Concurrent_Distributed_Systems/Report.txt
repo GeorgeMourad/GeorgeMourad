@@ -1,0 +1,20 @@
+Approach:
+There were a few different componenents necessary to make the zookeeper distributed server system work properly.
+I used the @zk.datawatch to watch the current master node, which helped with
+checking the need to replace the master node. 
+While kazoostate was watching where or not the server was lost or suspended, this was tracked to
+make sure we needed to verify if the server was still the master in the case it was already killed and replaced.
+I had a global flag to track whether or not a node was the master node based on if it currently existed as the master node
+and if zookeeper recognized it as the current master. 
+A timeout was added upon communicating with the client in order to make it so the server could handle the case where the server is 
+killed. This also helped with handling the case where zookeeper was restarted.
+
+Test results:
+As for my testing, I started by ensuring the servers worked with zookeeper and had 2 servers started.
+One was the master and one was watching to ensure it worked as expected.
+
+Next I tested to see if killing the master server would cause the secondary server to pick up where it left off
+and everything worked as expected where the watching server took over as the master.
+
+Finally, I tested to ensure the servers would work in the case of restarting the zookeeper service and it continued
+to work as expected.
