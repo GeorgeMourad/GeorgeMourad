@@ -1,0 +1,1974 @@
+1. 20 : DELAY (10) : 10 Car/Truck Probability: [1.0, 0.0]
+
+
+bash-4.4$ go run main
+Enter number of groups (Must be greater than 0): 2
+Number of groups 2
+Input group 1 size: 
+20
+Input delay for group 1 : 
+10
+Input group 2 size: 
+10
+Enter Chance for South Direction (Must be between 0.0 - 1.0 and North direction chance will be corresponding value): .5
+Enter Chance for type to be a Car (Must be between 0.0 - 1.0 and Truck Chance will be corresponding value): 1
+Vehicle #3(Northbound, Type: Car) arrived.
+
+Vehicle #3 is now crossing the bridge.
+
+Vehicles on the bridge: [#3(Northbound, Type: Car)]. Total Weight:100
+
+Vehicle #7(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#7(Type: Car)]
+
+Waiting vehicles (Northbound): []
+
+Vehicle #20(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#7 (Type: Car), #20(Type: Car)]
+
+Waiting vehicles (Northbound): []
+
+Vehicle #15(Southbound, Type: Car) arrived.
+
+Vehicle #13(Northbound, Type: Car) arrived.
+
+Vehicle #13 is now crossing the bridge.
+
+Vehicles on the bridge: [#3(Northbound, Type: Car), #13(Northbound, Type: Car)]. Total Weight:200
+
+Vehicle #17(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#7 (Type: Car), #20 (Type: Car), #15 (Type: Car), #17(Type: Car)]
+
+Waiting vehicles (Northbound): []
+
+Vehicle #18(Northbound, Type: Car) arrived.
+
+Vehicle #18 is now crossing the bridge.
+
+Vehicles on the bridge: [#3(Northbound, Type: Car), #13(Northbound, Type: Car), #18(Northbound, Type: Car)]. Total Weight:300
+
+Vehicle #19(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#7 (Type: Car), #20 (Type: Car), #15 (Type: Car), #17 (Type: Car), #19(Type: Car)]
+
+Waiting vehicles (Northbound): []
+
+Vehicle #2(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#7 (Type: Car), #20 (Type: Car), #15 (Type: Car), #17 (Type: Car), #19 (Type: Car), #2(Type: Car)]
+
+Waiting vehicles (Northbound): []
+
+Vehicle #5(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#7 (Type: Car), #20 (Type: Car), #15 (Type: Car), #17 (Type: Car), #19 (Type: Car), #2 (Type: Car), #5(Type: Car)]
+
+Waiting vehicles (Northbound): []
+
+Vehicle #4(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#7 (Type: Car), #20 (Type: Car), #15 (Type: Car), #17 (Type: Car), #19 (Type: Car), #2 (Type: Car), #5 (Type: Car), #4(Type: Car)]
+
+Waiting vehicles (Northbound): []
+
+Vehicle #10(Northbound, Type: Car) arrived.
+
+Vehicle #10 is now crossing the bridge.
+
+Vehicles on the bridge: [#3(Northbound, Type: Car), #13(Northbound, Type: Car), #18(Northbound, Type: Car), #10(Northbound, Type: Car)]. Total Weight:400
+
+Vehicle #8(Northbound, Type: Car) arrived.
+
+Vehicle #8 is now crossing the bridge.
+
+Vehicles on the bridge: [#3(Northbound, Type: Car), #13(Northbound, Type: Car), #18(Northbound, Type: Car), #10(Northbound, Type: Car), #8(Northbound, Type: Car)]. Total Weight:500
+
+Vehicle #1(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#7 (Type: Car), #20 (Type: Car), #15 (Type: Car), #17 (Type: Car), #19 (Type: Car), #2 (Type: Car), #5 (Type: Car), #4 (Type: Car), #1(Type: Car)]
+
+Waiting vehicles (Northbound): []
+
+Vehicle #9(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#7 (Type: Car), #20 (Type: Car), #15 (Type: Car), #17 (Type: Car), #19 (Type: Car), #2 (Type: Car), #5 (Type: Car), #4 (Type: Car), #1 (Type: Car), #9(Type: Car)]
+
+Waiting vehicles (Northbound): []
+
+Vehicle #6(Northbound, Type: Car) arrived.
+
+Vehicle #6 is now crossing the bridge.
+
+Vehicles on the bridge: [#3(Northbound, Type: Car), #13(Northbound, Type: Car), #18(Northbound, Type: Car), #10(Northbound, Type: Car), #8(Northbound, Type: Car), #6(Northbound, Type: Car)]. Total Weight:600
+
+Vehicle #11(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#7 (Type: Car), #20 (Type: Car), #15 (Type: Car), #17 (Type: Car), #19 (Type: Car), #2 (Type: Car), #5 (Type: Car), #4 (Type: Car), #1 (Type: Car), #9 (Type: Car), #11(Type: Car)]
+
+Waiting vehicles (Northbound): []
+
+Vehicle #12(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#7 (Type: Car), #20 (Type: Car), #15 (Type: Car), #17 (Type: Car), #19 (Type: Car), #2 (Type: Car), #5 (Type: Car), #4 (Type: Car), #1 (Type: Car), #9 (Type: Car), #11 (Type: Car), #12(Type: Car)]
+
+Waiting vehicles (Northbound): []
+
+Waiting vehicles (Southbound): [#7 (Type: Car), #20 (Type: Car), #15 (Type: Car), #17 (Type: Car), #19 (Type: Car), #2 (Type: Car), #5 (Type: Car), #4 (Type: Car), #1 (Type: Car), #9 (Type: Car), #11 (Type: Car), #12(Type: Car)]
+
+Waiting vehicles (Northbound): []
+
+Vehicle #16(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#7 (Type: Car), #20 (Type: Car), #15 (Type: Car), #17 (Type: Car), #19 (Type: Car), #2 (Type: Car), #5 (Type: Car), #4 (Type: Car), #1 (Type: Car), #9 (Type: Car), #11 (Type: Car), #12 (Type: Car), #16(Type: Car)]
+
+Waiting vehicles (Northbound): []
+
+Vehicle #14(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#7 (Type: Car), #20 (Type: Car), #15 (Type: Car), #17 (Type: Car), #19 (Type: Car), #2 (Type: Car), #5 (Type: Car), #4 (Type: Car), #1 (Type: Car), #9 (Type: Car), #11 (Type: Car), #12 (Type: Car), #16 (Type: Car), #14(Type: Car)]
+
+Waiting vehicles (Northbound): []
+
+Vehicle #13 exited the bridge. Total Weight:500
+
+Vehicle #18 exited the bridge. Total Weight:400
+
+Vehicle #3 exited the bridge. Total Weight:300
+
+Vehicle #6 exited the bridge. Total Weight:200
+
+Vehicle #10 exited the bridge. Total Weight:100
+
+Vehicle #8 exited the bridge. Total Weight:0
+
+Vehicle #7 is now crossing the bridge.
+
+Vehicles on the bridge: [#7(Southbound, Type: Car)]. Total Weight:100
+
+Vehicle #20 is now crossing the bridge.
+
+Vehicles on the bridge: [#7(Southbound, Type: Car), #20(Southbound, Type: Car)]. Total Weight:200
+
+Vehicle #15 is now crossing the bridge.
+
+Vehicles on the bridge: [#7(Southbound, Type: Car), #20(Southbound, Type: Car), #15(Southbound, Type: Car)]. Total Weight:300
+
+Vehicle #17 is now crossing the bridge.
+
+Vehicles on the bridge: [#7(Southbound, Type: Car), #20(Southbound, Type: Car), #15(Southbound, Type: Car), #17(Southbound, Type: Car)]. Total Weight:400
+
+Vehicle #19 is now crossing the bridge.
+
+Vehicles on the bridge: [#7(Southbound, Type: Car), #20(Southbound, Type: Car), #15(Southbound, Type: Car), #17(Southbound, Type: Car), #19(Southbound, Type: Car)]. Total Weight:500
+
+Vehicle #2 is now crossing the bridge.
+
+Vehicles on the bridge: [#7(Southbound, Type: Car), #20(Southbound, Type: Car), #15(Southbound, Type: Car), #17(Southbound, Type: Car), #19(Southbound, Type: Car), #2(Southbound, Type: Car)]. Total Weight:600
+
+Vehicle #5 is now crossing the bridge.
+
+Vehicles on the bridge: [#7(Southbound, Type: Car), #20(Southbound, Type: Car), #15(Southbound, Type: Car), #17(Southbound, Type: Car), #19(Southbound, Type: Car), #2(Southbound, Type: Car), #5(Southbound, Type: Car)]. Total Weight:700
+
+Waiting vehicles (Southbound): [#4 (Type: Car), #1 (Type: Car), #9 (Type: Car), #11 (Type: Car), #12 (Type: Car), #16 (Type: Car), #14(Type: Car)]
+
+Waiting vehicles (Northbound): []
+Vehicle #5 exited the bridge. Total Weight:600
+
+Vehicle #17 exited the bridge. Total Weight:500
+
+Vehicle #20 exited the bridge. Total Weight:400
+
+Vehicle #7 exited the bridge. Total Weight:300
+
+Vehicle #19 exited the bridge. Total Weight:200
+
+Vehicle #2 exited the bridge. Total Weight:100
+
+Vehicle #4 is now crossing the bridge.
+
+Vehicles on the bridge: [#15(Southbound, Type: Car), #4(Southbound, Type: Car)]. Total Weight:200
+
+Vehicle #1 is now crossing the bridge.
+
+Vehicles on the bridge: [#15(Southbound, Type: Car), #4(Southbound, Type: Car), #1(Southbound, Type: Car)]. Total Weight:300
+
+Vehicle #15 exited the bridge. Total Weight:200
+
+Vehicle #9 is now crossing the bridge.
+
+Vehicles on the bridge: [#4(Southbound, Type: Car), #1(Southbound, Type: Car), #9(Southbound, Type: Car)]. Total Weight:300
+
+Vehicle #11 is now crossing the bridge.
+
+Vehicles on the bridge: [#4(Southbound, Type: Car), #1(Southbound, Type: Car), #9(Southbound, Type: Car), #11(Southbound, Type: Car)]. Total Weight:400
+
+Vehicle #12 is now crossing the bridge.
+
+Vehicles on the bridge: [#4(Southbound, Type: Car), #1(Southbound, Type: Car), #9(Southbound, Type: Car), #11(Southbound, Type: Car), #12(Southbound, Type: Car)]. Total Weight:500
+
+Vehicle #16 is now crossing the bridge.
+
+Vehicles on the bridge: [#4(Southbound, Type: Car), #1(Southbound, Type: Car), #9(Southbound, Type: Car), #11(Southbound, Type: Car), #12(Southbound, Type: Car), #16(Southbound, Type: Car)]. Total Weight:600
+
+Vehicle #14 is now crossing the bridge.
+
+Vehicles on the bridge: [#4(Southbound, Type: Car), #1(Southbound, Type: Car), #9(Southbound, Type: Car), #11(Southbound, Type: Car), #12(Southbound, Type: Car), #16(Southbound, Type: Car), #14(Southbound, Type: Car)]. Total Weight:700
+
+Vehicle #14 exited the bridge. Total Weight:600
+
+Vehicle #1 exited the bridge. Total Weight:500
+
+Vehicle #9 exited the bridge. Total Weight:400
+
+Vehicle #11 exited the bridge. Total Weight:300
+
+Vehicle #4 exited the bridge. Total Weight:200
+
+Vehicle #12 exited the bridge. Total Weight:100
+
+Vehicle #16 exited the bridge. Total Weight:0
+
+Vehicle #30(Northbound, Type: Car) arrived.
+
+Vehicle #30 is now crossing the bridge.
+
+Vehicles on the bridge: [#30(Northbound, Type: Car)]. Total Weight:100
+
+Vehicle #24(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#24(Type: Car)]
+
+Waiting vehicles (Northbound): []
+
+Vehicle #25(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#24 (Type: Car), #25(Type: Car)]
+
+Waiting vehicles (Northbound): []
+
+Vehicle #21(Northbound, Type: Car) arrived.
+
+Vehicle #21 is now crossing the bridge.
+
+Vehicles on the bridge: [#30(Northbound, Type: Car), #21(Northbound, Type: Car)]. Total Weight:200
+
+Vehicle #22(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#24 (Type: Car), #25 (Type: Car), #22(Type: Car)]
+
+Waiting vehicles (Northbound): []
+
+Vehicle #23(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#24 (Type: Car), #25 (Type: Car), #22 (Type: Car), #23(Type: Car)]
+
+Waiting vehicles (Northbound): []
+
+Vehicle #26(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#24 (Type: Car), #25 (Type: Car), #22 (Type: Car), #23 (Type: Car), #26(Type: Car)]
+
+Waiting vehicles (Northbound): []
+
+Vehicle #27(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#24 (Type: Car), #25 (Type: Car), #22 (Type: Car), #23 (Type: Car), #26 (Type: Car), #27(Type: Car)]
+
+Waiting vehicles (Northbound): []
+
+Vehicle #28(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#24 (Type: Car), #25 (Type: Car), #22 (Type: Car), #23 (Type: Car), #26 (Type: Car), #27 (Type: Car), #28(Type: Car)]
+
+Waiting vehicles (Northbound): []
+
+Vehicle #29(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#24 (Type: Car), #25 (Type: Car), #22 (Type: Car), #23 (Type: Car), #26 (Type: Car), #27 (Type: Car), #28 (Type: Car), #29(Type: Car)]
+
+Waiting vehicles (Northbound): []
+
+Vehicle #21 exited the bridge. Total Weight:100
+
+Vehicle #30 exited the bridge. Total Weight:0
+
+Vehicle #24 is now crossing the bridge.
+
+Vehicles on the bridge: [#24(Southbound, Type: Car)]. Total Weight:100
+
+Vehicle #25 is now crossing the bridge.
+
+Vehicles on the bridge: [#24(Southbound, Type: Car), #25(Southbound, Type: Car)]. Total Weight:200
+
+Vehicle #22 is now crossing the bridge.
+
+Vehicles on the bridge: [#24(Southbound, Type: Car), #25(Southbound, Type: Car), #22(Southbound, Type: Car)]. Total Weight:300
+
+Vehicle #23 is now crossing the bridge.
+
+Vehicles on the bridge: [#24(Southbound, Type: Car), #25(Southbound, Type: Car), #22(Southbound, Type: Car), #23(Southbound, Type: Car)]. Total Weight:400
+
+Vehicle #26 is now crossing the bridge.
+
+Vehicles on the bridge: [#24(Southbound, Type: Car), #25(Southbound, Type: Car), #22(Southbound, Type: Car), #23(Southbound, Type: Car), #26(Southbound, Type: Car)]. Total Weight:500
+
+Vehicle #27 is now crossing the bridge.
+
+Vehicles on the bridge: [#24(Southbound, Type: Car), #25(Southbound, Type: Car), #22(Southbound, Type: Car), #23(Southbound, Type: Car), #26(Southbound, Type: Car), #27(Southbound, Type: Car)]. Total Weight:600
+
+Vehicle #28 is now crossing the bridge.
+
+Vehicles on the bridge: [#24(Southbound, Type: Car), #25(Southbound, Type: Car), #22(Southbound, Type: Car), #23(Southbound, Type: Car), #26(Southbound, Type: Car), #27(Southbound, Type: Car), #28(Southbound, Type: Car)]. Total Weight:700
+
+Waiting vehicles (Southbound): [#29(Type: Car)]
+
+Waiting vehicles (Northbound): []
+Vehicle #28 exited the bridge. Total Weight:600
+
+Vehicle #29 is now crossing the bridge.
+
+Vehicles on the bridge: [#24(Southbound, Type: Car), #25(Southbound, Type: Car), #22(Southbound, Type: Car), #23(Southbound, Type: Car), #26(Southbound, Type: Car), #27(Southbound, Type: Car), #29(Southbound, Type: Car)]. Total Weight:700
+
+Vehicle #24 exited the bridge. Total Weight:600
+
+Vehicle #25 exited the bridge. Total Weight:500
+
+Vehicle #22 exited the bridge. Total Weight:400
+
+Vehicle #23 exited the bridge. Total Weight:300
+
+Vehicle #26 exited the bridge. Total Weight:200
+
+Vehicle #27 exited the bridge. Total Weight:100
+
+Vehicle #29 exited the bridge. Total Weight:0
+
+
+
+
+
+
+
+
+
+2. 20: DELAY (10) : 10 Car/Truck Probability: [0.2, 0.8]
+
+
+bash-4.4$ go run main
+Enter number of groups (Must be greater than 0): 2
+Number of groups 2
+Input group 1 size: 
+20
+Input delay for group 1 : 
+10
+Input group 2 size: 
+10
+Enter Chance for South Direction (Must be between 0.0 - 1.0 and North direction chance will be corresponding value): .5
+Enter Chance for type to be a Car (Must be between 0.0 - 1.0 and Truck Chance will be corresponding value): .2
+Vehicle #1(Southbound, Type: Car) arrived.
+
+Vehicle #1 is now crossing the bridge.
+
+Vehicles on the bridge: [#1(Southbound, Type: Car)]. Total Weight:100
+
+Vehicle #20(Southbound, Type: Truck) arrived.
+
+Vehicle #20 is now crossing the bridge.
+
+Vehicles on the bridge: [#1(Southbound, Type: Car), #20(Southbound, Type: Truck)]. Total Weight:400
+
+Vehicle #2(Southbound, Type: Car) arrived.
+
+Vehicle #14(Southbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): [#2 (Type: Car), #14(Type: Truck)]
+
+Waiting vehicles (Northbound): []
+Vehicle #5(Southbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): [#2 (Type: Car), #14 (Type: Truck), #5(Type: Truck)]
+
+Waiting vehicles (Northbound): []
+Vehicle #10(Northbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): [#2 (Type: Car), #14 (Type: Truck), #5(Type: Truck)]
+
+Waiting vehicles (Northbound): [#10(Type: Truck)]
+
+Vehicle #6(Northbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): [#2 (Type: Car), #14 (Type: Truck), #5(Type: Truck)]
+
+Waiting vehicles (Northbound): [#10 (Type: Truck), #6(Type: Truck)]
+
+Vehicle #7(Southbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): [#2 (Type: Car), #14 (Type: Truck), #5 (Type: Truck), #7(Type: Truck)]
+
+Waiting vehicles (Northbound): [#10 (Type: Truck), #6(Type: Truck)]
+
+Vehicle #8(Northbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): [#2 (Type: Car), #14 (Type: Truck), #5 (Type: Truck), #7(Type: Truck)]
+
+Waiting vehicles (Northbound): [#10 (Type: Truck), #6 (Type: Truck), #8(Type: Truck)]
+
+Vehicle #9(Southbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): [#2 (Type: Car), #14 (Type: Truck), #5 (Type: Truck), #7 (Type: Truck), #9(Type: Truck)]
+
+Waiting vehicles (Northbound): [#10 (Type: Truck), #6 (Type: Truck), #8(Type: Truck)]
+
+Vehicle #4(Southbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): [#2 (Type: Car), #14 (Type: Truck), #5 (Type: Truck), #7 (Type: Truck), #9 (Type: Truck), #4(Type: Truck)]
+
+Waiting vehicles (Northbound): [#10 (Type: Truck), #6 (Type: Truck), #8(Type: Truck)]
+
+Vehicle #15(Southbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): [#2 (Type: Car), #14 (Type: Truck), #5 (Type: Truck), #7 (Type: Truck), #9 (Type: Truck), #4 (Type: Truck), #15(Type: Truck)]
+
+Waiting vehicles (Northbound): [#10 (Type: Truck), #6 (Type: Truck), #8(Type: Truck)]
+
+Vehicle #11(Southbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): [#2 (Type: Car), #14 (Type: Truck), #5 (Type: Truck), #7 (Type: Truck), #9 (Type: Truck), #4 (Type: Truck), #15 (Type: Truck), #11(Type: Truck)]
+
+Waiting vehicles (Northbound): [#10 (Type: Truck), #6 (Type: Truck), #8(Type: Truck)]
+
+Vehicle #12(Southbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): [#2 (Type: Car), #14 (Type: Truck), #5 (Type: Truck), #7 (Type: Truck), #9 (Type: Truck), #4 (Type: Truck), #15 (Type: Truck), #11 (Type: Truck), #12(Type: Truck)]
+
+Waiting vehicles (Northbound): [#10 (Type: Truck), #6 (Type: Truck), #8(Type: Truck)]
+
+Vehicle #16(Southbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): [#2 (Type: Car), #14 (Type: Truck), #5 (Type: Truck), #7 (Type: Truck), #9 (Type: Truck), #4 (Type: Truck), #15 (Type: Truck), #11 (Type: Truck), #12 (Type: Truck), #16(Type: Truck)]
+
+Waiting vehicles (Northbound): [#10 (Type: Truck), #6 (Type: Truck), #8(Type: Truck)]
+
+Vehicle #13(Northbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): [#2 (Type: Car), #14 (Type: Truck), #5 (Type: Truck), #7 (Type: Truck), #9 (Type: Truck), #4 (Type: Truck), #15 (Type: Truck), #11 (Type: Truck), #12 (Type: Truck), #16(Type: Truck)]
+
+Waiting vehicles (Northbound): [#10 (Type: Truck), #6 (Type: Truck), #8 (Type: Truck), #13(Type: Truck)]
+
+Vehicle #17(Southbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): [#2 (Type: Car), #14 (Type: Truck), #5 (Type: Truck), #7 (Type: Truck), #9 (Type: Truck), #4 (Type: Truck), #15 (Type: Truck), #11 (Type: Truck), #12 (Type: Truck), #16 (Type: Truck), #17(Type: Truck)]
+
+Waiting vehicles (Northbound): [#10 (Type: Truck), #6 (Type: Truck), #8 (Type: Truck), #13(Type: Truck)]
+
+Vehicle #3(Northbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): [#2 (Type: Car), #14 (Type: Truck), #5 (Type: Truck), #7 (Type: Truck), #9 (Type: Truck), #4 (Type: Truck), #15 (Type: Truck), #11 (Type: Truck), #12 (Type: Truck), #16 (Type: Truck), #17(Type: Truck)]
+
+Waiting vehicles (Northbound): [#10 (Type: Truck), #6 (Type: Truck), #8 (Type: Truck), #13 (Type: Truck), #3(Type: Truck)]
+
+Vehicle #19(Southbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): [#2 (Type: Car), #14 (Type: Truck), #5 (Type: Truck), #7 (Type: Truck), #9 (Type: Truck), #4 (Type: Truck), #15 (Type: Truck), #11 (Type: Truck), #12 (Type: Truck), #16 (Type: Truck), #17 (Type: Truck), #19(Type: Truck)]
+
+Waiting vehicles (Northbound): [#10 (Type: Truck), #6 (Type: Truck), #8 (Type: Truck), #13 (Type: Truck), #3(Type: Truck)]
+
+Vehicle #2 is now crossing the bridge.
+
+Vehicles on the bridge: [#1(Southbound, Type: Car), #20(Southbound, Type: Truck), #2(Southbound, Type: Car)]. Total Weight:500
+
+Vehicle #18(Northbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): [#14 (Type: Truck), #5 (Type: Truck), #7 (Type: Truck), #9 (Type: Truck), #4 (Type: Truck), #15 (Type: Truck), #11 (Type: Truck), #12 (Type: Truck), #16 (Type: Truck), #17 (Type: Truck), #19(Type: Truck)]
+
+Waiting vehicles (Northbound): [#10 (Type: Truck), #6 (Type: Truck), #8 (Type: Truck), #13 (Type: Truck), #3 (Type: Truck), #18(Type: Truck)]
+
+Waiting vehicles (Southbound): [#14 (Type: Truck), #5 (Type: Truck), #7 (Type: Truck), #9 (Type: Truck), #4 (Type: Truck), #15 (Type: Truck), #11 (Type: Truck), #12 (Type: Truck), #16 (Type: Truck), #17 (Type: Truck), #19(Type: Truck)]
+
+Waiting vehicles (Northbound): [#10 (Type: Truck), #6 (Type: Truck), #8 (Type: Truck), #13 (Type: Truck), #3 (Type: Truck), #18(Type: Truck)]
+
+Vehicle #1 exited the bridge. Total Weight:400
+
+Vehicle #14 is now crossing the bridge.
+
+Vehicles on the bridge: [#20(Southbound, Type: Truck), #2(Southbound, Type: Car), #14(Southbound, Type: Truck)]. Total Weight:700
+
+Waiting vehicles (Southbound): [#5 (Type: Truck), #7 (Type: Truck), #9 (Type: Truck), #4 (Type: Truck), #15 (Type: Truck), #11 (Type: Truck), #12 (Type: Truck), #16 (Type: Truck), #17 (Type: Truck), #19(Type: Truck)]
+
+Waiting vehicles (Northbound): [#10 (Type: Truck), #6 (Type: Truck), #8 (Type: Truck), #13 (Type: Truck), #3 (Type: Truck), #18(Type: Truck)]
+
+Vehicle #20 exited the bridge. Total Weight:400
+
+Vehicle #5 is now crossing the bridge.
+
+Vehicles on the bridge: [#2(Southbound, Type: Car), #14(Southbound, Type: Truck), #5(Southbound, Type: Truck)]. Total Weight:700
+
+Waiting vehicles (Southbound): [#7 (Type: Truck), #9 (Type: Truck), #4 (Type: Truck), #15 (Type: Truck), #11 (Type: Truck), #12 (Type: Truck), #16 (Type: Truck), #17 (Type: Truck), #19(Type: Truck)]
+
+Waiting vehicles (Northbound): [#10 (Type: Truck), #6 (Type: Truck), #8 (Type: Truck), #13 (Type: Truck), #3 (Type: Truck), #18(Type: Truck)]
+
+Vehicle #2 exited the bridge. Total Weight:600
+
+Waiting vehicles (Southbound): [#7 (Type: Truck), #9 (Type: Truck), #4 (Type: Truck), #15 (Type: Truck), #11 (Type: Truck), #12 (Type: Truck), #16 (Type: Truck), #17 (Type: Truck), #19(Type: Truck)]
+
+Waiting vehicles (Northbound): [#10 (Type: Truck), #6 (Type: Truck), #8 (Type: Truck), #13 (Type: Truck), #3 (Type: Truck), #18(Type: Truck)]
+
+Vehicle #5 exited the bridge. Total Weight:300
+
+Vehicle #7 is now crossing the bridge.
+
+Vehicles on the bridge: [#14(Southbound, Type: Truck), #7(Southbound, Type: Truck)]. Total Weight:600
+
+Waiting vehicles (Southbound): [#9 (Type: Truck), #4 (Type: Truck), #15 (Type: Truck), #11 (Type: Truck), #12 (Type: Truck), #16 (Type: Truck), #17 (Type: Truck), #19(Type: Truck)]
+
+Waiting vehicles (Northbound): [#10 (Type: Truck), #6 (Type: Truck), #8 (Type: Truck), #13 (Type: Truck), #3 (Type: Truck), #18(Type: Truck)]
+
+Vehicle #14 exited the bridge. Total Weight:300
+
+Waiting vehicles (Southbound): [#9 (Type: Truck), #4 (Type: Truck), #15 (Type: Truck), #11 (Type: Truck), #12 (Type: Truck), #16 (Type: Truck), #17 (Type: Truck), #19(Type: Truck)]
+
+Waiting vehicles (Northbound): [#10 (Type: Truck), #6 (Type: Truck), #8 (Type: Truck), #13 (Type: Truck), #3 (Type: Truck), #18(Type: Truck)]
+
+Vehicle #7 exited the bridge. Total Weight:0
+
+Vehicle #10 is now crossing the bridge.
+
+Vehicles on the bridge: [#10(Northbound, Type: Truck)]. Total Weight:300
+
+Vehicle #6 is now crossing the bridge.
+
+Vehicles on the bridge: [#10(Northbound, Type: Truck), #6(Northbound, Type: Truck)]. Total Weight:600
+
+Waiting vehicles (Southbound): [#9 (Type: Truck), #4 (Type: Truck), #15 (Type: Truck), #11 (Type: Truck), #12 (Type: Truck), #16 (Type: Truck), #17 (Type: Truck), #19(Type: Truck)]
+
+Waiting vehicles (Northbound): [#8 (Type: Truck), #13 (Type: Truck), #3 (Type: Truck), #18(Type: Truck)]
+
+Vehicle #6 exited the bridge. Total Weight:300
+
+Vehicle #8 is now crossing the bridge.
+
+Vehicles on the bridge: [#10(Northbound, Type: Truck), #8(Northbound, Type: Truck)]. Total Weight:600
+
+Vehicle #10 exited the bridge. Total Weight:300
+
+Vehicle #13 is now crossing the bridge.
+
+Vehicles on the bridge: [#8(Northbound, Type: Truck), #13(Northbound, Type: Truck)]. Total Weight:600
+
+Waiting vehicles (Southbound): [#9 (Type: Truck), #4 (Type: Truck), #15 (Type: Truck), #11 (Type: Truck), #12 (Type: Truck), #16 (Type: Truck), #17 (Type: Truck), #19(Type: Truck)]
+
+Waiting vehicles (Northbound): [#3 (Type: Truck), #18(Type: Truck)]
+
+Vehicle #30(Northbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): [#9 (Type: Truck), #4 (Type: Truck), #15 (Type: Truck), #11 (Type: Truck), #12 (Type: Truck), #16 (Type: Truck), #17 (Type: Truck), #19(Type: Truck)]
+
+Waiting vehicles (Northbound): [#3 (Type: Truck), #18 (Type: Truck), #30(Type: Truck)]
+
+Vehicle #22(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#9 (Type: Truck), #4 (Type: Truck), #15 (Type: Truck), #11 (Type: Truck), #12 (Type: Truck), #16 (Type: Truck), #17 (Type: Truck), #19 (Type: Truck), #22(Type: Car)]
+
+Waiting vehicles (Northbound): [#3 (Type: Truck), #18 (Type: Truck), #30(Type: Truck)]
+
+Vehicle #25(Southbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): [#9 (Type: Truck), #4 (Type: Truck), #15 (Type: Truck), #11 (Type: Truck), #12 (Type: Truck), #16 (Type: Truck), #17 (Type: Truck), #19 (Type: Truck), #22 (Type: Car), #25(Type: Truck)]
+
+Waiting vehicles (Northbound): [#3 (Type: Truck), #18 (Type: Truck), #30(Type: Truck)]
+
+Vehicle #23(Southbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): [#9 (Type: Truck), #4 (Type: Truck), #15 (Type: Truck), #11 (Type: Truck), #12 (Type: Truck), #16 (Type: Truck), #17 (Type: Truck), #19 (Type: Truck), #22 (Type: Car), #25 (Type: Truck), #23(Type: Truck)]
+
+Waiting vehicles (Northbound): [#3 (Type: Truck), #18 (Type: Truck), #30(Type: Truck)]
+
+Vehicle #21(Northbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): [#9 (Type: Truck), #4 (Type: Truck), #15 (Type: Truck), #11 (Type: Truck), #12 (Type: Truck), #16 (Type: Truck), #17 (Type: Truck), #19 (Type: Truck), #22 (Type: Car), #25 (Type: Truck), #23(Type: Truck)]
+
+Waiting vehicles (Northbound): [#3 (Type: Truck), #18 (Type: Truck), #30 (Type: Truck), #21(Type: Truck)]
+
+Vehicle #24(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#9 (Type: Truck), #4 (Type: Truck), #15 (Type: Truck), #11 (Type: Truck), #12 (Type: Truck), #16 (Type: Truck), #17 (Type: Truck), #19 (Type: Truck), #22 (Type: Car), #25 (Type: Truck), #23 (Type: Truck), #24(Type: Car)]
+
+Waiting vehicles (Northbound): [#3 (Type: Truck), #18 (Type: Truck), #30 (Type: Truck), #21(Type: Truck)]
+
+Vehicle #27(Southbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): [#9 (Type: Truck), #4 (Type: Truck), #15 (Type: Truck), #11 (Type: Truck), #12 (Type: Truck), #16 (Type: Truck), #17 (Type: Truck), #19 (Type: Truck), #22 (Type: Car), #25 (Type: Truck), #23 (Type: Truck), #24 (Type: Car), #27(Type: Truck)]
+
+Waiting vehicles (Northbound): [#3 (Type: Truck), #18 (Type: Truck), #30 (Type: Truck), #21(Type: Truck)]
+
+Vehicle #29(Southbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): [#9 (Type: Truck), #4 (Type: Truck), #15 (Type: Truck), #11 (Type: Truck), #12 (Type: Truck), #16 (Type: Truck), #17 (Type: Truck), #19 (Type: Truck), #22 (Type: Car), #25 (Type: Truck), #23 (Type: Truck), #24 (Type: Car), #27 (Type: Truck), #29(Type: Truck)]
+
+Waiting vehicles (Northbound): [#3 (Type: Truck), #18 (Type: Truck), #30 (Type: Truck), #21(Type: Truck)]
+
+Vehicle #28(Southbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): [#9 (Type: Truck), #4 (Type: Truck), #15 (Type: Truck), #11 (Type: Truck), #12 (Type: Truck), #16 (Type: Truck), #17 (Type: Truck), #19 (Type: Truck), #22 (Type: Car), #25 (Type: Truck), #23 (Type: Truck), #24 (Type: Car), #27 (Type: Truck), #29 (Type: Truck), #28(Type: Truck)]
+
+Waiting vehicles (Northbound): [#3 (Type: Truck), #18 (Type: Truck), #30 (Type: Truck), #21(Type: Truck)]
+
+Vehicle #26(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#9 (Type: Truck), #4 (Type: Truck), #15 (Type: Truck), #11 (Type: Truck), #12 (Type: Truck), #16 (Type: Truck), #17 (Type: Truck), #19 (Type: Truck), #22 (Type: Car), #25 (Type: Truck), #23 (Type: Truck), #24 (Type: Car), #27 (Type: Truck), #29 (Type: Truck), #28 (Type: Truck), #26(Type: Car)]
+
+Waiting vehicles (Northbound): [#3 (Type: Truck), #18 (Type: Truck), #30 (Type: Truck), #21(Type: Truck)]
+
+Vehicle #13 exited the bridge. Total Weight:300
+
+Vehicle #3 is now crossing the bridge.
+
+Vehicles on the bridge: [#8(Northbound, Type: Truck), #3(Northbound, Type: Truck)]. Total Weight:600
+
+Waiting vehicles (Southbound): [#9 (Type: Truck), #4 (Type: Truck), #15 (Type: Truck), #11 (Type: Truck), #12 (Type: Truck), #16 (Type: Truck), #17 (Type: Truck), #19 (Type: Truck), #22 (Type: Car), #25 (Type: Truck), #23 (Type: Truck), #24 (Type: Car), #27 (Type: Truck), #29 (Type: Truck), #28 (Type: Truck), #26(Type: Car)]
+
+Waiting vehicles (Northbound): [#18 (Type: Truck), #30 (Type: Truck), #21(Type: Truck)]
+
+Vehicle #8 exited the bridge. Total Weight:300
+
+Vehicle #18 is now crossing the bridge.
+
+Vehicles on the bridge: [#3(Northbound, Type: Truck), #18(Northbound, Type: Truck)]. Total Weight:600
+
+Waiting vehicles (Southbound): [#9 (Type: Truck), #4 (Type: Truck), #15 (Type: Truck), #11 (Type: Truck), #12 (Type: Truck), #16 (Type: Truck), #17 (Type: Truck), #19 (Type: Truck), #22 (Type: Car), #25 (Type: Truck), #23 (Type: Truck), #24 (Type: Car), #27 (Type: Truck), #29 (Type: Truck), #28 (Type: Truck), #26(Type: Car)]
+
+Waiting vehicles (Northbound): [#30 (Type: Truck), #21(Type: Truck)]
+
+Vehicle #18 exited the bridge. Total Weight:300
+
+Vehicle #3 exited the bridge. Total Weight:0
+
+Waiting vehicles (Southbound): [#9 (Type: Truck), #4 (Type: Truck), #15 (Type: Truck), #11 (Type: Truck), #12 (Type: Truck), #16 (Type: Truck), #17 (Type: Truck), #19 (Type: Truck), #22 (Type: Car), #25 (Type: Truck), #23 (Type: Truck), #24 (Type: Car), #27 (Type: Truck), #29 (Type: Truck), #28 (Type: Truck), #26(Type: Car)]
+
+Waiting vehicles (Northbound): [#30 (Type: Truck), #21(Type: Truck)]
+
+Vehicle #9 is now crossing the bridge.
+
+Vehicles on the bridge: [#9(Southbound, Type: Truck)]. Total Weight:300
+
+Vehicle #4 is now crossing the bridge.
+
+Vehicles on the bridge: [#9(Southbound, Type: Truck), #4(Southbound, Type: Truck)]. Total Weight:600
+
+Waiting vehicles (Southbound): [#15 (Type: Truck), #11 (Type: Truck), #12 (Type: Truck), #16 (Type: Truck), #17 (Type: Truck), #19 (Type: Truck), #22 (Type: Car), #25 (Type: Truck), #23 (Type: Truck), #24 (Type: Car), #27 (Type: Truck), #29 (Type: Truck), #28 (Type: Truck), #26(Type: Car)]
+
+Waiting vehicles (Northbound): [#30 (Type: Truck), #21(Type: Truck)]
+
+Vehicle #4 exited the bridge. Total Weight:300
+
+Vehicle #15 is now crossing the bridge.
+
+Vehicles on the bridge: [#9(Southbound, Type: Truck), #15(Southbound, Type: Truck)]. Total Weight:600
+
+Waiting vehicles (Southbound): [#11 (Type: Truck), #12 (Type: Truck), #16 (Type: Truck), #17 (Type: Truck), #19 (Type: Truck), #22 (Type: Car), #25 (Type: Truck), #23 (Type: Truck), #24 (Type: Car), #27 (Type: Truck), #29 (Type: Truck), #28 (Type: Truck), #26(Type: Car)]
+
+Waiting vehicles (Northbound): [#30 (Type: Truck), #21(Type: Truck)]
+
+Vehicle #9 exited the bridge. Total Weight:300
+
+Vehicle #11 is now crossing the bridge.
+
+Vehicles on the bridge: [#15(Southbound, Type: Truck), #11(Southbound, Type: Truck)]. Total Weight:600
+
+Waiting vehicles (Southbound): [#12 (Type: Truck), #16 (Type: Truck), #17 (Type: Truck), #19 (Type: Truck), #22 (Type: Car), #25 (Type: Truck), #23 (Type: Truck), #24 (Type: Car), #27 (Type: Truck), #29 (Type: Truck), #28 (Type: Truck), #26(Type: Car)]
+
+Waiting vehicles (Northbound): [#30 (Type: Truck), #21(Type: Truck)]
+
+Vehicle #11 exited the bridge. Total Weight:300
+
+Vehicle #12 is now crossing the bridge.
+
+Vehicles on the bridge: [#15(Southbound, Type: Truck), #12(Southbound, Type: Truck)]. Total Weight:600
+
+Waiting vehicles (Southbound): [#16 (Type: Truck), #17 (Type: Truck), #19 (Type: Truck), #22 (Type: Car), #25 (Type: Truck), #23 (Type: Truck), #24 (Type: Car), #27 (Type: Truck), #29 (Type: Truck), #28 (Type: Truck), #26(Type: Car)]
+
+Waiting vehicles (Northbound): [#30 (Type: Truck), #21(Type: Truck)]
+
+Vehicle #15 exited the bridge. Total Weight:300
+
+Vehicle #16 is now crossing the bridge.
+
+Vehicles on the bridge: [#12(Southbound, Type: Truck), #16(Southbound, Type: Truck)]. Total Weight:600
+
+Waiting vehicles (Southbound): [#17 (Type: Truck), #19 (Type: Truck), #22 (Type: Car), #25 (Type: Truck), #23 (Type: Truck), #24 (Type: Car), #27 (Type: Truck), #29 (Type: Truck), #28 (Type: Truck), #26(Type: Car)]
+
+Waiting vehicles (Northbound): [#30 (Type: Truck), #21(Type: Truck)]
+
+Vehicle #12 exited the bridge. Total Weight:300
+
+Vehicle #16 exited the bridge. Total Weight:0
+
+Waiting vehicles (Southbound): [#17 (Type: Truck), #19 (Type: Truck), #22 (Type: Car), #25 (Type: Truck), #23 (Type: Truck), #24 (Type: Car), #27 (Type: Truck), #29 (Type: Truck), #28 (Type: Truck), #26(Type: Car)]
+
+Waiting vehicles (Northbound): [#30 (Type: Truck), #21(Type: Truck)]
+
+Vehicle #30 is now crossing the bridge.
+
+Vehicles on the bridge: [#30(Northbound, Type: Truck)]. Total Weight:300
+
+Vehicle #21 is now crossing the bridge.
+
+Vehicles on the bridge: [#30(Northbound, Type: Truck), #21(Northbound, Type: Truck)]. Total Weight:600
+
+Vehicle #21 exited the bridge. Total Weight:300
+
+Vehicle #30 exited the bridge. Total Weight:0
+
+Vehicle #17 is now crossing the bridge.
+
+Vehicles on the bridge: [#17(Southbound, Type: Truck)]. Total Weight:300
+
+Vehicle #19 is now crossing the bridge.
+
+Vehicles on the bridge: [#17(Southbound, Type: Truck), #19(Southbound, Type: Truck)]. Total Weight:600
+
+Vehicle #22 is now crossing the bridge.
+
+Vehicles on the bridge: [#17(Southbound, Type: Truck), #19(Southbound, Type: Truck), #22(Southbound, Type: Car)]. Total Weight:700
+
+Waiting vehicles (Southbound): [#25 (Type: Truck), #23 (Type: Truck), #24 (Type: Car), #27 (Type: Truck), #29 (Type: Truck), #28 (Type: Truck), #26(Type: Car)]
+
+Waiting vehicles (Northbound): []
+Vehicle #22 exited the bridge. Total Weight:600
+
+Waiting vehicles (Southbound): [#25 (Type: Truck), #23 (Type: Truck), #24 (Type: Car), #27 (Type: Truck), #29 (Type: Truck), #28 (Type: Truck), #26(Type: Car)]
+
+Waiting vehicles (Northbound): []
+Vehicle #19 exited the bridge. Total Weight:300
+
+Vehicle #25 is now crossing the bridge.
+
+Vehicles on the bridge: [#17(Southbound, Type: Truck), #25(Southbound, Type: Truck)]. Total Weight:600
+
+Waiting vehicles (Southbound): [#23 (Type: Truck), #24 (Type: Car), #27 (Type: Truck), #29 (Type: Truck), #28 (Type: Truck), #26(Type: Car)]
+
+Waiting vehicles (Northbound): []
+Vehicle #17 exited the bridge. Total Weight:300
+
+Vehicle #23 is now crossing the bridge.
+
+Vehicles on the bridge: [#25(Southbound, Type: Truck), #23(Southbound, Type: Truck)]. Total Weight:600
+
+Vehicle #24 is now crossing the bridge.
+
+Vehicles on the bridge: [#25(Southbound, Type: Truck), #23(Southbound, Type: Truck), #24(Southbound, Type: Car)]. Total Weight:700
+
+Waiting vehicles (Southbound): [#27 (Type: Truck), #29 (Type: Truck), #28 (Type: Truck), #26(Type: Car)]
+
+Waiting vehicles (Northbound): []
+Vehicle #25 exited the bridge. Total Weight:400
+
+Vehicle #27 is now crossing the bridge.
+
+Vehicles on the bridge: [#23(Southbound, Type: Truck), #24(Southbound, Type: Car), #27(Southbound, Type: Truck)]. Total Weight:700
+
+Vehicle #23 exited the bridge. Total Weight:400
+
+Vehicle #24 exited the bridge. Total Weight:300
+
+Vehicle #29 is now crossing the bridge.
+
+Vehicles on the bridge: [#27(Southbound, Type: Truck), #29(Southbound, Type: Truck)]. Total Weight:600
+
+Waiting vehicles (Southbound): [#28 (Type: Truck), #26(Type: Car)]
+
+Waiting vehicles (Northbound): []
+Vehicle #27 exited the bridge. Total Weight:300
+
+Vehicle #29 exited the bridge. Total Weight:0
+
+Vehicle #28 is now crossing the bridge.
+
+Vehicles on the bridge: [#28(Southbound, Type: Truck)]. Total Weight:300
+
+Vehicle #26 is now crossing the bridge.
+
+Vehicles on the bridge: [#28(Southbound, Type: Truck), #26(Southbound, Type: Car)]. Total Weight:400
+
+Vehicle #26 exited the bridge. Total Weight:300
+
+Vehicle #28 exited the bridge. Total Weight:0
+
+
+
+
+
+
+
+
+
+
+3. 30 Car/Truck Probability: [0.8, 0.2]
+
+
+bash-4.4$ go run main
+Enter number of groups (Must be greater than 0): 1
+Number of groups 1
+Input group 1 size: 
+30
+Enter Chance for South Direction (Must be between 0.0 - 1.0 and North direction chance will be corresponding value): .5
+Enter Chance for type to be a Car (Must be between 0.0 - 1.0 and Truck Chance will be corresponding value): .8
+Vehicle #30(Northbound, Type: Car) arrived.
+
+Vehicle #30 is now crossing the bridge.
+
+Vehicles on the bridge: [#30(Northbound, Type: Car)]. Total Weight:100
+
+Vehicle #15(Southbound, Type: Car) arrived.
+
+Vehicle #18(Northbound, Type: Car) arrived.
+
+Vehicle #10(Northbound, Type: Car) arrived.
+
+Vehicle #22(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#15 (Type: Car), #22(Type: Car)]
+
+Waiting vehicles (Northbound): [#18 (Type: Car), #10(Type: Car)]
+
+Vehicle #28(Southbound, Type: Car) arrived.
+
+Vehicle #6(Northbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#15 (Type: Car), #22 (Type: Car), #28(Type: Car)]
+
+Waiting vehicles (Northbound): [#18 (Type: Car), #10 (Type: Car), #6(Type: Car)]
+
+Vehicle #7(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#15 (Type: Car), #22 (Type: Car), #28 (Type: Car), #7(Type: Car)]
+
+Waiting vehicles (Northbound): [#18 (Type: Car), #10 (Type: Car), #6(Type: Car)]
+
+Vehicle #13(Northbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#15 (Type: Car), #22 (Type: Car), #28 (Type: Car), #7(Type: Car)]
+
+Waiting vehicles (Northbound): [#18 (Type: Car), #10 (Type: Car), #6 (Type: Car), #13(Type: Car)]
+
+Waiting vehicles (Southbound): [#15 (Type: Car), #22 (Type: Car), #28 (Type: Car), #7(Type: Car)]
+
+Waiting vehicles (Northbound): [#18 (Type: Car), #10 (Type: Car), #6 (Type: Car), #13(Type: Car)]
+
+Waiting vehicles (Southbound): [#15 (Type: Car), #22 (Type: Car), #28 (Type: Car), #7(Type: Car)]
+
+Waiting vehicles (Northbound): [#18 (Type: Car), #10 (Type: Car), #6 (Type: Car), #13(Type: Car)]
+
+Vehicle #18 is now crossing the bridge.
+
+Vehicles on the bridge: [#30(Northbound, Type: Car), #18(Northbound, Type: Car)]. Total Weight:200
+
+Vehicle #10 is now crossing the bridge.
+
+Vehicles on the bridge: [#30(Northbound, Type: Car), #18(Northbound, Type: Car), #10(Northbound, Type: Car)]. Total Weight:300
+
+Vehicle #6 is now crossing the bridge.
+
+Vehicles on the bridge: [#30(Northbound, Type: Car), #18(Northbound, Type: Car), #10(Northbound, Type: Car), #6(Northbound, Type: Car)]. Total Weight:400
+
+Vehicle #17(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#15 (Type: Car), #22 (Type: Car), #28 (Type: Car), #7 (Type: Car), #17(Type: Car)]
+
+Waiting vehicles (Northbound): [#13(Type: Car)]
+
+Vehicle #16(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#15 (Type: Car), #22 (Type: Car), #28 (Type: Car), #7 (Type: Car), #17 (Type: Car), #16(Type: Car)]
+
+Waiting vehicles (Northbound): [#13(Type: Car)]
+
+Vehicle #8(Northbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#15 (Type: Car), #22 (Type: Car), #28 (Type: Car), #7 (Type: Car), #17 (Type: Car), #16(Type: Car)]
+
+Waiting vehicles (Northbound): [#13 (Type: Car), #8(Type: Car)]
+
+Vehicle #9(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#15 (Type: Car), #22 (Type: Car), #28 (Type: Car), #7 (Type: Car), #17 (Type: Car), #16 (Type: Car), #9(Type: Car)]
+
+Waiting vehicles (Northbound): [#13 (Type: Car), #8(Type: Car)]
+
+Vehicle #19(Southbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): [#15 (Type: Car), #22 (Type: Car), #28 (Type: Car), #7 (Type: Car), #17 (Type: Car), #16 (Type: Car), #9 (Type: Car), #19(Type: Truck)]
+
+Waiting vehicles (Northbound): [#13 (Type: Car), #8(Type: Car)]
+
+Vehicle #20(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#15 (Type: Car), #22 (Type: Car), #28 (Type: Car), #7 (Type: Car), #17 (Type: Car), #16 (Type: Car), #9 (Type: Car), #19 (Type: Truck), #20(Type: Car)]
+
+Waiting vehicles (Northbound): [#13 (Type: Car), #8(Type: Car)]
+
+Vehicle #21(Northbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#15 (Type: Car), #22 (Type: Car), #28 (Type: Car), #7 (Type: Car), #17 (Type: Car), #16 (Type: Car), #9 (Type: Car), #19 (Type: Truck), #20(Type: Car)]
+
+Waiting vehicles (Northbound): [#13 (Type: Car), #8 (Type: Car), #21(Type: Car)]
+
+Vehicle #11(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#15 (Type: Car), #22 (Type: Car), #28 (Type: Car), #7 (Type: Car), #17 (Type: Car), #16 (Type: Car), #9 (Type: Car), #19 (Type: Truck), #20 (Type: Car), #11(Type: Car)]
+
+Waiting vehicles (Northbound): [#13 (Type: Car), #8 (Type: Car), #21(Type: Car)]
+
+Vehicle #12(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#15 (Type: Car), #22 (Type: Car), #28 (Type: Car), #7 (Type: Car), #17 (Type: Car), #16 (Type: Car), #9 (Type: Car), #19 (Type: Truck), #20 (Type: Car), #11 (Type: Car), #12(Type: Car)]
+
+Waiting vehicles (Northbound): [#13 (Type: Car), #8 (Type: Car), #21(Type: Car)]
+
+Vehicle #14(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#15 (Type: Car), #22 (Type: Car), #28 (Type: Car), #7 (Type: Car), #17 (Type: Car), #16 (Type: Car), #9 (Type: Car), #19 (Type: Truck), #20 (Type: Car), #11 (Type: Car), #12 (Type: Car), #14(Type: Car)]
+
+Waiting vehicles (Northbound): [#13 (Type: Car), #8 (Type: Car), #21(Type: Car)]
+
+Vehicle #26(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#15 (Type: Car), #22 (Type: Car), #28 (Type: Car), #7 (Type: Car), #17 (Type: Car), #16 (Type: Car), #9 (Type: Car), #19 (Type: Truck), #20 (Type: Car), #11 (Type: Car), #12 (Type: Car), #14 (Type: Car), #26(Type: Car)]
+
+Waiting vehicles (Northbound): [#13 (Type: Car), #8 (Type: Car), #21(Type: Car)]
+
+Vehicle #23(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#15 (Type: Car), #22 (Type: Car), #28 (Type: Car), #7 (Type: Car), #17 (Type: Car), #16 (Type: Car), #9 (Type: Car), #19 (Type: Truck), #20 (Type: Car), #11 (Type: Car), #12 (Type: Car), #14 (Type: Car), #26 (Type: Car), #23(Type: Car)]
+
+Waiting vehicles (Northbound): [#13 (Type: Car), #8 (Type: Car), #21(Type: Car)]
+
+Vehicle #24(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#15 (Type: Car), #22 (Type: Car), #28 (Type: Car), #7 (Type: Car), #17 (Type: Car), #16 (Type: Car), #9 (Type: Car), #19 (Type: Truck), #20 (Type: Car), #11 (Type: Car), #12 (Type: Car), #14 (Type: Car), #26 (Type: Car), #23 (Type: Car), #24(Type: Car)]
+
+Waiting vehicles (Northbound): [#13 (Type: Car), #8 (Type: Car), #21(Type: Car)]
+
+Vehicle #25(Southbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): [#15 (Type: Car), #22 (Type: Car), #28 (Type: Car), #7 (Type: Car), #17 (Type: Car), #16 (Type: Car), #9 (Type: Car), #19 (Type: Truck), #20 (Type: Car), #11 (Type: Car), #12 (Type: Car), #14 (Type: Car), #26 (Type: Car), #23 (Type: Car), #24 (Type: Car), #25(Type: Truck)]
+
+Waiting vehicles (Northbound): [#13 (Type: Car), #8 (Type: Car), #21(Type: Car)]
+
+Vehicle #3(Northbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#15 (Type: Car), #22 (Type: Car), #28 (Type: Car), #7 (Type: Car), #17 (Type: Car), #16 (Type: Car), #9 (Type: Car), #19 (Type: Truck), #20 (Type: Car), #11 (Type: Car), #12 (Type: Car), #14 (Type: Car), #26 (Type: Car), #23 (Type: Car), #24 (Type: Car), #25(Type: Truck)]
+
+Waiting vehicles (Northbound): [#13 (Type: Car), #8 (Type: Car), #21 (Type: Car), #3(Type: Car)]
+
+Vehicle #1(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#15 (Type: Car), #22 (Type: Car), #28 (Type: Car), #7 (Type: Car), #17 (Type: Car), #16 (Type: Car), #9 (Type: Car), #19 (Type: Truck), #20 (Type: Car), #11 (Type: Car), #12 (Type: Car), #14 (Type: Car), #26 (Type: Car), #23 (Type: Car), #24 (Type: Car), #25 (Type: Truck), #1(Type: Car)]
+
+Waiting vehicles (Northbound): [#13 (Type: Car), #8 (Type: Car), #21 (Type: Car), #3(Type: Car)]
+
+Vehicle #2(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#15 (Type: Car), #22 (Type: Car), #28 (Type: Car), #7 (Type: Car), #17 (Type: Car), #16 (Type: Car), #9 (Type: Car), #19 (Type: Truck), #20 (Type: Car), #11 (Type: Car), #12 (Type: Car), #14 (Type: Car), #26 (Type: Car), #23 (Type: Car), #24 (Type: Car), #25 (Type: Truck), #1 (Type: Car), #2(Type: Car)]
+
+Waiting vehicles (Northbound): [#13 (Type: Car), #8 (Type: Car), #21 (Type: Car), #3(Type: Car)]
+
+Vehicle #4(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#15 (Type: Car), #22 (Type: Car), #28 (Type: Car), #7 (Type: Car), #17 (Type: Car), #16 (Type: Car), #9 (Type: Car), #19 (Type: Truck), #20 (Type: Car), #11 (Type: Car), #12 (Type: Car), #14 (Type: Car), #26 (Type: Car), #23 (Type: Car), #24 (Type: Car), #25 (Type: Truck), #1 (Type: Car), #2 (Type: Car), #4(Type: Car)]
+
+Waiting vehicles (Northbound): [#13 (Type: Car), #8 (Type: Car), #21 (Type: Car), #3(Type: Car)]
+
+Vehicle #29(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#15 (Type: Car), #22 (Type: Car), #28 (Type: Car), #7 (Type: Car), #17 (Type: Car), #16 (Type: Car), #9 (Type: Car), #19 (Type: Truck), #20 (Type: Car), #11 (Type: Car), #12 (Type: Car), #14 (Type: Car), #26 (Type: Car), #23 (Type: Car), #24 (Type: Car), #25 (Type: Truck), #1 (Type: Car), #2 (Type: Car), #4 (Type: Car), #29(Type: Car)]
+
+Waiting vehicles (Northbound): [#13 (Type: Car), #8 (Type: Car), #21 (Type: Car), #3(Type: Car)]
+
+Waiting vehicles (Southbound): [#15 (Type: Car), #22 (Type: Car), #28 (Type: Car), #7 (Type: Car), #17 (Type: Car), #16 (Type: Car), #9 (Type: Car), #19 (Type: Truck), #20 (Type: Car), #11 (Type: Car), #12 (Type: Car), #14 (Type: Car), #26 (Type: Car), #23 (Type: Car), #24 (Type: Car), #25 (Type: Truck), #1 (Type: Car), #2 (Type: Car), #4 (Type: Car), #29(Type: Car)]
+
+Waiting vehicles (Northbound): [#13 (Type: Car), #8 (Type: Car), #21 (Type: Car), #3(Type: Car)]
+
+Vehicle #27(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#15 (Type: Car), #22 (Type: Car), #28 (Type: Car), #7 (Type: Car), #17 (Type: Car), #16 (Type: Car), #9 (Type: Car), #19 (Type: Truck), #20 (Type: Car), #11 (Type: Car), #12 (Type: Car), #14 (Type: Car), #26 (Type: Car), #23 (Type: Car), #24 (Type: Car), #25 (Type: Truck), #1 (Type: Car), #2 (Type: Car), #4 (Type: Car), #29 (Type: Car), #27(Type: Car)]
+
+Waiting vehicles (Northbound): [#13 (Type: Car), #8 (Type: Car), #21 (Type: Car), #3(Type: Car)]
+
+Vehicle #5(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#15 (Type: Car), #22 (Type: Car), #28 (Type: Car), #7 (Type: Car), #17 (Type: Car), #16 (Type: Car), #9 (Type: Car), #19 (Type: Truck), #20 (Type: Car), #11 (Type: Car), #12 (Type: Car), #14 (Type: Car), #26 (Type: Car), #23 (Type: Car), #24 (Type: Car), #25 (Type: Truck), #1 (Type: Car), #2 (Type: Car), #4 (Type: Car), #29 (Type: Car), #27 (Type: Car), #5(Type: Car)]
+
+Waiting vehicles (Northbound): [#13 (Type: Car), #8 (Type: Car), #21 (Type: Car), #3(Type: Car)]
+
+Vehicle #13 is now crossing the bridge.
+
+Vehicles on the bridge: [#30(Northbound, Type: Car), #18(Northbound, Type: Car), #10(Northbound, Type: Car), #6(Northbound, Type: Car), #13(Northbound, Type: Car)]. Total Weight:500
+
+Vehicle #8 is now crossing the bridge.
+
+Vehicles on the bridge: [#30(Northbound, Type: Car), #18(Northbound, Type: Car), #10(Northbound, Type: Car), #6(Northbound, Type: Car), #13(Northbound, Type: Car), #8(Northbound, Type: Car)]. Total Weight:600
+
+Waiting vehicles (Southbound): [#15 (Type: Car), #22 (Type: Car), #28 (Type: Car), #7 (Type: Car), #17 (Type: Car), #16 (Type: Car), #9 (Type: Car), #19 (Type: Truck), #20 (Type: Car), #11 (Type: Car), #12 (Type: Car), #14 (Type: Car), #26 (Type: Car), #23 (Type: Car), #24 (Type: Car), #25 (Type: Truck), #1 (Type: Car), #2 (Type: Car), #4 (Type: Car), #29 (Type: Car), #27 (Type: Car), #5(Type: Car)]
+
+Waiting vehicles (Northbound): [#21 (Type: Car), #3(Type: Car)]
+
+Vehicle #6 exited the bridge. Total Weight:500
+
+Vehicle #10 exited the bridge. Total Weight:400
+
+Vehicle #30 exited the bridge. Total Weight:300
+
+Waiting vehicles (Southbound): [#15 (Type: Car), #22 (Type: Car), #28 (Type: Car), #7 (Type: Car), #17 (Type: Car), #16 (Type: Car), #9 (Type: Car), #19 (Type: Truck), #20 (Type: Car), #11 (Type: Car), #12 (Type: Car), #14 (Type: Car), #26 (Type: Car), #23 (Type: Car), #24 (Type: Car), #25 (Type: Truck), #1 (Type: Car), #2 (Type: Car), #4 (Type: Car), #29 (Type: Car), #27 (Type: Car), #5(Type: Car)]
+
+Waiting vehicles (Northbound): [#21 (Type: Car), #3(Type: Car)]
+
+Vehicle #18 exited the bridge. Total Weight:200
+
+Waiting vehicles (Southbound): [#15 (Type: Car), #22 (Type: Car), #28 (Type: Car), #7 (Type: Car), #17 (Type: Car), #16 (Type: Car), #9 (Type: Car), #19 (Type: Truck), #20 (Type: Car), #11 (Type: Car), #12 (Type: Car), #14 (Type: Car), #26 (Type: Car), #23 (Type: Car), #24 (Type: Car), #25 (Type: Truck), #1 (Type: Car), #2 (Type: Car), #4 (Type: Car), #29 (Type: Car), #27 (Type: Car), #5(Type: Car)]
+
+Waiting vehicles (Northbound): [#21 (Type: Car), #3(Type: Car)]
+
+Vehicle #8 exited the bridge. Total Weight:100
+
+Waiting vehicles (Southbound): [#15 (Type: Car), #22 (Type: Car), #28 (Type: Car), #7 (Type: Car), #17 (Type: Car), #16 (Type: Car), #9 (Type: Car), #19 (Type: Truck), #20 (Type: Car), #11 (Type: Car), #12 (Type: Car), #14 (Type: Car), #26 (Type: Car), #23 (Type: Car), #24 (Type: Car), #25 (Type: Truck), #1 (Type: Car), #2 (Type: Car), #4 (Type: Car), #29 (Type: Car), #27 (Type: Car), #5(Type: Car)]
+
+Waiting vehicles (Northbound): [#21 (Type: Car), #3(Type: Car)]
+
+Vehicle #13 exited the bridge. Total Weight:0
+
+Vehicle #15 is now crossing the bridge.
+
+Vehicles on the bridge: [#15(Southbound, Type: Car)]. Total Weight:100
+
+Vehicle #22 is now crossing the bridge.
+
+Vehicles on the bridge: [#15(Southbound, Type: Car), #22(Southbound, Type: Car)]. Total Weight:200
+
+Vehicle #28 is now crossing the bridge.
+
+Vehicles on the bridge: [#15(Southbound, Type: Car), #22(Southbound, Type: Car), #28(Southbound, Type: Car)]. Total Weight:300
+
+Vehicle #7 is now crossing the bridge.
+
+Vehicles on the bridge: [#15(Southbound, Type: Car), #22(Southbound, Type: Car), #28(Southbound, Type: Car), #7(Southbound, Type: Car)]. Total Weight:400
+
+Vehicle #17 is now crossing the bridge.
+
+Vehicles on the bridge: [#15(Southbound, Type: Car), #22(Southbound, Type: Car), #28(Southbound, Type: Car), #7(Southbound, Type: Car), #17(Southbound, Type: Car)]. Total Weight:500
+
+Vehicle #16 is now crossing the bridge.
+
+Vehicles on the bridge: [#15(Southbound, Type: Car), #22(Southbound, Type: Car), #28(Southbound, Type: Car), #7(Southbound, Type: Car), #17(Southbound, Type: Car), #16(Southbound, Type: Car)]. Total Weight:600
+
+Waiting vehicles (Southbound): [#9 (Type: Car), #19 (Type: Truck), #20 (Type: Car), #11 (Type: Car), #12 (Type: Car), #14 (Type: Car), #26 (Type: Car), #23 (Type: Car), #24 (Type: Car), #25 (Type: Truck), #1 (Type: Car), #2 (Type: Car), #4 (Type: Car), #29 (Type: Car), #27 (Type: Car), #5(Type: Car)]
+
+Waiting vehicles (Northbound): [#21 (Type: Car), #3(Type: Car)]
+
+Vehicle #16 exited the bridge. Total Weight:500
+
+Waiting vehicles (Southbound): [#9 (Type: Car), #19 (Type: Truck), #20 (Type: Car), #11 (Type: Car), #12 (Type: Car), #14 (Type: Car), #26 (Type: Car), #23 (Type: Car), #24 (Type: Car), #25 (Type: Truck), #1 (Type: Car), #2 (Type: Car), #4 (Type: Car), #29 (Type: Car), #27 (Type: Car), #5(Type: Car)]
+
+Waiting vehicles (Northbound): [#21 (Type: Car), #3(Type: Car)]
+
+Vehicle #15 exited the bridge. Total Weight:400
+
+Vehicle #22 exited the bridge. Total Weight:300
+
+Vehicle #7 exited the bridge. Total Weight:200
+
+Vehicle #28 exited the bridge. Total Weight:100
+
+Vehicle #17 exited the bridge. Total Weight:0
+
+Vehicle #21 is now crossing the bridge.
+
+Vehicles on the bridge: [#21(Northbound, Type: Car)]. Total Weight:100
+
+Vehicle #3 is now crossing the bridge.
+
+Vehicles on the bridge: [#21(Northbound, Type: Car), #3(Northbound, Type: Car)]. Total Weight:200
+
+Waiting vehicles (Southbound): [#9 (Type: Car), #19 (Type: Truck), #20 (Type: Car), #11 (Type: Car), #12 (Type: Car), #14 (Type: Car), #26 (Type: Car), #23 (Type: Car), #24 (Type: Car), #25 (Type: Truck), #1 (Type: Car), #2 (Type: Car), #4 (Type: Car), #29 (Type: Car), #27 (Type: Car), #5(Type: Car)]
+
+Waiting vehicles (Northbound): []
+
+Vehicle #3 exited the bridge. Total Weight:100
+
+Vehicle #21 exited the bridge. Total Weight:0
+
+Vehicle #9 is now crossing the bridge.
+
+Vehicles on the bridge: [#9(Southbound, Type: Car)]. Total Weight:100
+
+Vehicle #19 is now crossing the bridge.
+
+Vehicles on the bridge: [#9(Southbound, Type: Car), #19(Southbound, Type: Truck)]. Total Weight:400
+
+Vehicle #20 is now crossing the bridge.
+
+Vehicles on the bridge: [#9(Southbound, Type: Car), #19(Southbound, Type: Truck), #20(Southbound, Type: Car)]. Total Weight:500
+
+Vehicle #11 is now crossing the bridge.
+
+Vehicles on the bridge: [#9(Southbound, Type: Car), #19(Southbound, Type: Truck), #20(Southbound, Type: Car), #11(Southbound, Type: Car)]. Total Weight:600
+
+Vehicle #12 is now crossing the bridge.
+
+Vehicles on the bridge: [#9(Southbound, Type: Car), #19(Southbound, Type: Truck), #20(Southbound, Type: Car), #11(Southbound, Type: Car), #12(Southbound, Type: Car)]. Total Weight:700
+
+Waiting vehicles (Southbound): [#14 (Type: Car), #26 (Type: Car), #23 (Type: Car), #24 (Type: Car), #25 (Type: Truck), #1 (Type: Car), #2 (Type: Car), #4 (Type: Car), #29 (Type: Car), #27 (Type: Car), #5(Type: Car)]
+
+Waiting vehicles (Northbound): []
+Vehicle #12 exited the bridge. Total Weight:600
+
+Vehicle #9 exited the bridge. Total Weight:500
+
+Vehicle #20 exited the bridge. Total Weight:400
+
+Vehicle #14 is now crossing the bridge.
+
+Vehicles on the bridge: [#19(Southbound, Type: Truck), #11(Southbound, Type: Car), #14(Southbound, Type: Car)]. Total Weight:500
+
+Vehicle #19 exited the bridge. Total Weight:200
+
+Vehicle #11 exited the bridge. Total Weight:100
+
+Vehicle #26 is now crossing the bridge.
+
+Vehicles on the bridge: [#14(Southbound, Type: Car), #26(Southbound, Type: Car)]. Total Weight:200
+
+Vehicle #23 is now crossing the bridge.
+
+Vehicles on the bridge: [#14(Southbound, Type: Car), #26(Southbound, Type: Car), #23(Southbound, Type: Car)]. Total Weight:300
+
+Vehicle #24 is now crossing the bridge.
+
+Vehicles on the bridge: [#14(Southbound, Type: Car), #26(Southbound, Type: Car), #23(Southbound, Type: Car), #24(Southbound, Type: Car)]. Total Weight:400
+
+Vehicle #25 is now crossing the bridge.
+
+Vehicles on the bridge: [#14(Southbound, Type: Car), #26(Southbound, Type: Car), #23(Southbound, Type: Car), #24(Southbound, Type: Car), #25(Southbound, Type: Truck)]. Total Weight:700
+
+Waiting vehicles (Southbound): [#1 (Type: Car), #2 (Type: Car), #4 (Type: Car), #29 (Type: Car), #27 (Type: Car), #5(Type: Car)]
+
+Waiting vehicles (Northbound): []
+Vehicle #25 exited the bridge. Total Weight:400
+
+Vehicle #1 is now crossing the bridge.
+
+Vehicles on the bridge: [#14(Southbound, Type: Car), #26(Southbound, Type: Car), #23(Southbound, Type: Car), #24(Southbound, Type: Car), #1(Southbound, Type: Car)]. Total Weight:500
+
+Vehicle #2 is now crossing the bridge.
+
+Vehicles on the bridge: [#14(Southbound, Type: Car), #26(Southbound, Type: Car), #23(Southbound, Type: Car), #24(Southbound, Type: Car), #1(Southbound, Type: Car), #2(Southbound, Type: Car)]. Total Weight:600
+
+Vehicle #4 is now crossing the bridge.
+
+Vehicles on the bridge: [#14(Southbound, Type: Car), #26(Southbound, Type: Car), #23(Southbound, Type: Car), #24(Southbound, Type: Car), #1(Southbound, Type: Car), #2(Southbound, Type: Car), #4(Southbound, Type: Car)]. Total Weight:700
+
+Vehicle #26 exited the bridge. Total Weight:600
+
+Vehicle #14 exited the bridge. Total Weight:500
+
+Vehicle #23 exited the bridge. Total Weight:400
+
+Vehicle #24 exited the bridge. Total Weight:300
+
+Vehicle #29 is now crossing the bridge.
+
+Vehicles on the bridge: [#1(Southbound, Type: Car), #2(Southbound, Type: Car), #4(Southbound, Type: Car), #29(Southbound, Type: Car)]. Total Weight:400
+
+Vehicle #27 is now crossing the bridge.
+
+Vehicles on the bridge: [#1(Southbound, Type: Car), #2(Southbound, Type: Car), #4(Southbound, Type: Car), #29(Southbound, Type: Car), #27(Southbound, Type: Car)]. Total Weight:500
+
+Vehicle #5 is now crossing the bridge.
+
+Vehicles on the bridge: [#1(Southbound, Type: Car), #2(Southbound, Type: Car), #4(Southbound, Type: Car), #29(Southbound, Type: Car), #27(Southbound, Type: Car), #5(Southbound, Type: Car)]. Total Weight:600
+
+Vehicle #5 exited the bridge. Total Weight:500
+
+Vehicle #1 exited the bridge. Total Weight:400
+
+Vehicle #2 exited the bridge. Total Weight:300
+
+Vehicle #4 exited the bridge. Total Weight:200
+
+Vehicle #29 exited the bridge. Total Weight:100
+
+Vehicle #27 exited the bridge. Total Weight:0
+
+
+
+
+
+
+
+
+
+
+
+4. 15 : DELAY(45) : 15 Car/Truck Probability: [0.7, 0.3]
+
+
+
+bash-4.4$ go run main
+Enter number of groups (Must be greater than 0): 2
+Number of groups 2
+Input group 1 size: 
+15
+Input delay for group 1 : 
+45
+Input group 2 size: 
+15
+Enter Chance for South Direction (Must be between 0.0 - 1.0 and North direction chance will be corresponding value): .5
+Enter Chance for type to be a Car (Must be between 0.0 - 1.0 and Truck Chance will be corresponding value): .7
+Vehicle #2(Southbound, Type: Car) arrived.
+
+Vehicle #2 is now crossing the bridge.
+
+Vehicles on the bridge: [#2(Southbound, Type: Car)]. Total Weight:100
+
+Vehicle #1(Southbound, Type: Car) arrived.
+
+Vehicle #1 is now crossing the bridge.
+
+Vehicles on the bridge: [#2(Southbound, Type: Car), #1(Southbound, Type: Car)]. Total Weight:200
+
+Vehicle #15(Southbound, Type: Car) arrived.
+
+Vehicle #15 is now crossing the bridge.
+
+Vehicles on the bridge: [#2(Southbound, Type: Car), #1(Southbound, Type: Car), #15(Southbound, Type: Car)]. Total Weight:300
+
+Vehicle #3(Northbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): []
+Waiting vehicles (Northbound): [#3(Type: Car)]
+
+Vehicle #4(Southbound, Type: Car) arrived.
+
+Vehicle #4 is now crossing the bridge.
+
+Vehicles on the bridge: [#2(Southbound, Type: Car), #1(Southbound, Type: Car), #15(Southbound, Type: Car), #4(Southbound, Type: Car)]. Total Weight:400
+
+Vehicle #5(Southbound, Type: Car) arrived.
+
+Vehicle #5 is now crossing the bridge.
+
+Vehicles on the bridge: [#2(Southbound, Type: Car), #1(Southbound, Type: Car), #15(Southbound, Type: Car), #4(Southbound, Type: Car), #5(Southbound, Type: Car)]. Total Weight:500
+
+Vehicle #6(Northbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): []
+Waiting vehicles (Northbound): [#3 (Type: Car), #6(Type: Car)]
+
+Vehicle #7(Southbound, Type: Car) arrived.
+
+Vehicle #7 is now crossing the bridge.
+
+Vehicles on the bridge: [#2(Southbound, Type: Car), #1(Southbound, Type: Car), #15(Southbound, Type: Car), #4(Southbound, Type: Car), #5(Southbound, Type: Car), #7(Southbound, Type: Car)]. Total Weight:600
+
+Vehicle #8(Northbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): []
+Waiting vehicles (Northbound): [#3 (Type: Car), #6 (Type: Car), #8(Type: Car)]
+
+Vehicle #9(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#9(Type: Car)]
+
+Waiting vehicles (Northbound): [#3 (Type: Car), #6 (Type: Car), #8(Type: Car)]
+
+Vehicle #10(Northbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#9(Type: Car)]
+
+Waiting vehicles (Northbound): [#3 (Type: Car), #6 (Type: Car), #8 (Type: Car), #10(Type: Car)]
+
+Vehicle #11(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#9 (Type: Car), #11(Type: Car)]
+
+Waiting vehicles (Northbound): [#3 (Type: Car), #6 (Type: Car), #8 (Type: Car), #10(Type: Car)]
+
+Vehicle #12(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#9 (Type: Car), #11 (Type: Car), #12(Type: Car)]
+
+Waiting vehicles (Northbound): [#3 (Type: Car), #6 (Type: Car), #8 (Type: Car), #10(Type: Car)]
+
+Vehicle #13(Northbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#9 (Type: Car), #11 (Type: Car), #12(Type: Car)]
+
+Waiting vehicles (Northbound): [#3 (Type: Car), #6 (Type: Car), #8 (Type: Car), #10 (Type: Car), #13(Type: Car)]
+
+Vehicle #14(Southbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): [#9 (Type: Car), #11 (Type: Car), #12 (Type: Car), #14(Type: Truck)]
+
+Waiting vehicles (Northbound): [#3 (Type: Car), #6 (Type: Car), #8 (Type: Car), #10 (Type: Car), #13(Type: Car)]
+
+Vehicle #7 exited the bridge. Total Weight:500
+
+Waiting vehicles (Southbound): [#9 (Type: Car), #11 (Type: Car), #12 (Type: Car), #14(Type: Truck)]
+
+Waiting vehicles (Northbound): [#3 (Type: Car), #6 (Type: Car), #8 (Type: Car), #10 (Type: Car), #13(Type: Car)]
+
+Vehicle #5 exited the bridge. Total Weight:400
+
+Vehicle #1 exited the bridge. Total Weight:300
+
+Vehicle #2 exited the bridge. Total Weight:200
+
+Waiting vehicles (Southbound): [#9 (Type: Car), #11 (Type: Car), #12 (Type: Car), #14(Type: Truck)]
+
+Waiting vehicles (Northbound): [#3 (Type: Car), #6 (Type: Car), #8 (Type: Car), #10 (Type: Car), #13(Type: Car)]
+
+Vehicle #4 exited the bridge. Total Weight:100
+
+Vehicle #15 exited the bridge. Total Weight:0
+
+Waiting vehicles (Southbound): [#9 (Type: Car), #11 (Type: Car), #12 (Type: Car), #14(Type: Truck)]
+
+Waiting vehicles (Northbound): [#3 (Type: Car), #6 (Type: Car), #8 (Type: Car), #10 (Type: Car), #13(Type: Car)]
+
+Vehicle #3 is now crossing the bridge.
+
+Vehicles on the bridge: [#3(Northbound, Type: Car)]. Total Weight:100
+
+Vehicle #6 is now crossing the bridge.
+
+Vehicles on the bridge: [#3(Northbound, Type: Car), #6(Northbound, Type: Car)]. Total Weight:200
+
+Vehicle #8 is now crossing the bridge.
+
+Vehicles on the bridge: [#3(Northbound, Type: Car), #6(Northbound, Type: Car), #8(Northbound, Type: Car)]. Total Weight:300
+
+Vehicle #10 is now crossing the bridge.
+
+Vehicles on the bridge: [#3(Northbound, Type: Car), #6(Northbound, Type: Car), #8(Northbound, Type: Car), #10(Northbound, Type: Car)]. Total Weight:400
+
+Vehicle #13 is now crossing the bridge.
+
+Vehicles on the bridge: [#3(Northbound, Type: Car), #6(Northbound, Type: Car), #8(Northbound, Type: Car), #10(Northbound, Type: Car), #13(Northbound, Type: Car)]. Total Weight:500
+
+Vehicle #13 exited the bridge. Total Weight:400
+
+Vehicle #10 exited the bridge. Total Weight:300
+
+Vehicle #3 exited the bridge. Total Weight:200
+
+Vehicle #6 exited the bridge. Total Weight:100
+
+Vehicle #8 exited the bridge. Total Weight:0
+
+Vehicle #9 is now crossing the bridge.
+
+Vehicles on the bridge: [#9(Southbound, Type: Car)]. Total Weight:100
+
+Vehicle #11 is now crossing the bridge.
+
+Vehicles on the bridge: [#9(Southbound, Type: Car), #11(Southbound, Type: Car)]. Total Weight:200
+
+Vehicle #12 is now crossing the bridge.
+
+Vehicles on the bridge: [#9(Southbound, Type: Car), #11(Southbound, Type: Car), #12(Southbound, Type: Car)]. Total Weight:300
+
+Vehicle #14 is now crossing the bridge.
+
+Vehicles on the bridge: [#9(Southbound, Type: Car), #11(Southbound, Type: Car), #12(Southbound, Type: Car), #14(Southbound, Type: Truck)]. Total Weight:600
+
+Vehicle #14 exited the bridge. Total Weight:300
+
+Vehicle #9 exited the bridge. Total Weight:200
+
+Vehicle #11 exited the bridge. Total Weight:100
+
+Vehicle #12 exited the bridge. Total Weight:0
+
+Vehicle #18(Northbound, Type: Car) arrived.
+
+Vehicle #26(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#26(Type: Car)]
+
+Waiting vehicles (Northbound): [#18(Type: Car)]
+
+Vehicle #18 is now crossing the bridge.
+
+Vehicles on the bridge: [#18(Northbound, Type: Car)]. Total Weight:100
+
+Vehicle #19(Southbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): [#26 (Type: Car), #19(Type: Truck)]
+
+Waiting vehicles (Northbound): []
+
+Vehicle #20(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#26 (Type: Car), #19 (Type: Truck), #20(Type: Car)]
+
+Waiting vehicles (Northbound): []
+
+Vehicle #21(Northbound, Type: Car) arrived.
+
+Vehicle #21 is now crossing the bridge.
+
+Vehicles on the bridge: [#18(Northbound, Type: Car), #21(Northbound, Type: Car)]. Total Weight:200
+
+Vehicle #22(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#26 (Type: Car), #19 (Type: Truck), #20 (Type: Car), #22(Type: Car)]
+
+Waiting vehicles (Northbound): []
+
+Vehicle #23(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#26 (Type: Car), #19 (Type: Truck), #20 (Type: Car), #22 (Type: Car), #23(Type: Car)]
+
+Waiting vehicles (Northbound): []
+
+Vehicle #24(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#26 (Type: Car), #19 (Type: Truck), #20 (Type: Car), #22 (Type: Car), #23 (Type: Car), #24(Type: Car)]
+
+Waiting vehicles (Northbound): []
+
+Vehicle #25(Southbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): [#26 (Type: Car), #19 (Type: Truck), #20 (Type: Car), #22 (Type: Car), #23 (Type: Car), #24 (Type: Car), #25(Type: Truck)]
+
+Waiting vehicles (Northbound): []
+
+Vehicle #30(Northbound, Type: Car) arrived.
+
+Vehicle #30 is now crossing the bridge.
+
+Vehicles on the bridge: [#18(Northbound, Type: Car), #21(Northbound, Type: Car), #30(Northbound, Type: Car)]. Total Weight:300
+
+Vehicle #16(Southbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): [#26 (Type: Car), #19 (Type: Truck), #20 (Type: Car), #22 (Type: Car), #23 (Type: Car), #24 (Type: Car), #25 (Type: Truck), #16(Type: Truck)]
+
+Waiting vehicles (Northbound): []
+
+Vehicle #17(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#26 (Type: Car), #19 (Type: Truck), #20 (Type: Car), #22 (Type: Car), #23 (Type: Car), #24 (Type: Car), #25 (Type: Truck), #16 (Type: Truck), #17(Type: Car)]
+
+Waiting vehicles (Northbound): []
+
+Vehicle #28(Southbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): [#26 (Type: Car), #19 (Type: Truck), #20 (Type: Car), #22 (Type: Car), #23 (Type: Car), #24 (Type: Car), #25 (Type: Truck), #16 (Type: Truck), #17 (Type: Car), #28(Type: Truck)]
+
+Waiting vehicles (Northbound): []
+
+Vehicle #27(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#26 (Type: Car), #19 (Type: Truck), #20 (Type: Car), #22 (Type: Car), #23 (Type: Car), #24 (Type: Car), #25 (Type: Truck), #16 (Type: Truck), #17 (Type: Car), #28 (Type: Truck), #27(Type: Car)]
+
+Waiting vehicles (Northbound): []
+
+Vehicle #29(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#26 (Type: Car), #19 (Type: Truck), #20 (Type: Car), #22 (Type: Car), #23 (Type: Car), #24 (Type: Car), #25 (Type: Truck), #16 (Type: Truck), #17 (Type: Car), #28 (Type: Truck), #27 (Type: Car), #29(Type: Car)]
+
+Waiting vehicles (Northbound): []
+
+Vehicle #30 exited the bridge. Total Weight:200
+
+Vehicle #21 exited the bridge. Total Weight:100
+
+Vehicle #18 exited the bridge. Total Weight:0
+
+Vehicle #26 is now crossing the bridge.
+
+Vehicles on the bridge: [#26(Southbound, Type: Car)]. Total Weight:100
+
+Vehicle #19 is now crossing the bridge.
+
+Vehicles on the bridge: [#26(Southbound, Type: Car), #19(Southbound, Type: Truck)]. Total Weight:400
+
+Vehicle #20 is now crossing the bridge.
+
+Vehicles on the bridge: [#26(Southbound, Type: Car), #19(Southbound, Type: Truck), #20(Southbound, Type: Car)]. Total Weight:500
+
+Vehicle #22 is now crossing the bridge.
+
+Vehicles on the bridge: [#26(Southbound, Type: Car), #19(Southbound, Type: Truck), #20(Southbound, Type: Car), #22(Southbound, Type: Car)]. Total Weight:600
+
+Vehicle #23 is now crossing the bridge.
+
+Vehicles on the bridge: [#26(Southbound, Type: Car), #19(Southbound, Type: Truck), #20(Southbound, Type: Car), #22(Southbound, Type: Car), #23(Southbound, Type: Car)]. Total Weight:700
+
+Waiting vehicles (Southbound): [#24 (Type: Car), #25 (Type: Truck), #16 (Type: Truck), #17 (Type: Car), #28 (Type: Truck), #27 (Type: Car), #29(Type: Car)]
+
+Waiting vehicles (Northbound): []
+Vehicle #23 exited the bridge. Total Weight:600
+
+Vehicle #24 is now crossing the bridge.
+
+Vehicles on the bridge: [#26(Southbound, Type: Car), #19(Southbound, Type: Truck), #20(Southbound, Type: Car), #22(Southbound, Type: Car), #24(Southbound, Type: Car)]. Total Weight:700
+
+Vehicle #26 exited the bridge. Total Weight:600
+
+Vehicle #19 exited the bridge. Total Weight:300
+
+Vehicle #25 is now crossing the bridge.
+
+Vehicles on the bridge: [#20(Southbound, Type: Car), #22(Southbound, Type: Car), #24(Southbound, Type: Car), #25(Southbound, Type: Truck)]. Total Weight:600
+
+Vehicle #22 exited the bridge. Total Weight:500
+
+Vehicle #20 exited the bridge. Total Weight:400
+
+Vehicle #16 is now crossing the bridge.
+
+Vehicles on the bridge: [#24(Southbound, Type: Car), #25(Southbound, Type: Truck), #16(Southbound, Type: Truck)]. Total Weight:700
+
+Waiting vehicles (Southbound): [#17 (Type: Car), #28 (Type: Truck), #27 (Type: Car), #29(Type: Car)]
+
+Waiting vehicles (Northbound): []
+Vehicle #24 exited the bridge. Total Weight:600
+
+Vehicle #25 exited the bridge. Total Weight:300
+
+Vehicle #16 exited the bridge. Total Weight:0
+
+Vehicle #17 is now crossing the bridge.
+
+Vehicles on the bridge: [#17(Southbound, Type: Car)]. Total Weight:100
+
+Vehicle #28 is now crossing the bridge.
+
+Vehicles on the bridge: [#17(Southbound, Type: Car), #28(Southbound, Type: Truck)]. Total Weight:400
+
+Vehicle #27 is now crossing the bridge.
+
+Vehicles on the bridge: [#17(Southbound, Type: Car), #28(Southbound, Type: Truck), #27(Southbound, Type: Car)]. Total Weight:500
+
+Vehicle #29 is now crossing the bridge.
+
+Vehicles on the bridge: [#17(Southbound, Type: Car), #28(Southbound, Type: Truck), #27(Southbound, Type: Car), #29(Southbound, Type: Car)]. Total Weight:600
+
+Vehicle #29 exited the bridge. Total Weight:500
+
+Vehicle #27 exited the bridge. Total Weight:400
+
+Vehicle #17 exited the bridge. Total Weight:300
+
+Vehicle #28 exited the bridge. Total Weight:0
+
+
+
+
+
+
+
+
+
+
+
+
+5. 10: DELAY(2) : 10 : DELAY (2): 10 Car/Truck Probability: [0.5, 0.5]
+
+
+bash-4.4$ go run main
+Enter number of groups (Must be greater than 0): 3
+Number of groups 3
+Input group 1 size: 
+10
+Input delay for group 1 : 
+2
+Input group 2 size: 
+10
+Input delay for group 2 : 
+2
+Input group 3 size: 
+10
+Enter Chance for South Direction (Must be between 0.0 - 1.0 and North direction chance will be corresponding value): .5
+Enter Chance for type to be a Car (Must be between 0.0 - 1.0 and Truck Chance will be corresponding value): .5
+Vehicle #4(Southbound, Type: Car) arrived.
+
+Vehicle #4 is now crossing the bridge.
+
+Vehicles on the bridge: [#4(Southbound, Type: Car)]. Total Weight:100
+
+Vehicle #1(Southbound, Type: Car) arrived.
+
+Vehicle #1 is now crossing the bridge.
+
+Vehicles on the bridge: [#4(Southbound, Type: Car), #1(Southbound, Type: Car)]. Total Weight:200
+
+Vehicle #2(Southbound, Type: Car) arrived.
+
+Vehicle #2 is now crossing the bridge.
+
+Vehicles on the bridge: [#4(Southbound, Type: Car), #1(Southbound, Type: Car), #2(Southbound, Type: Car)]. Total Weight:300
+
+Vehicle #10(Northbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): []
+Waiting vehicles (Northbound): [#10(Type: Truck)]
+
+Vehicle #5(Southbound, Type: Car) arrived.
+
+Vehicle #5 is now crossing the bridge.
+
+Vehicles on the bridge: [#4(Southbound, Type: Car), #1(Southbound, Type: Car), #2(Southbound, Type: Car), #5(Southbound, Type: Car)]. Total Weight:400
+
+Vehicle #6(Northbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): []
+Waiting vehicles (Northbound): [#10 (Type: Truck), #6(Type: Truck)]
+
+Vehicle #7(Southbound, Type: Car) arrived.
+
+Vehicle #7 is now crossing the bridge.
+
+Vehicles on the bridge: [#4(Southbound, Type: Car), #1(Southbound, Type: Car), #2(Southbound, Type: Car), #5(Southbound, Type: Car), #7(Southbound, Type: Car)]. Total Weight:500
+
+Vehicle #8(Northbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): []
+Waiting vehicles (Northbound): [#10 (Type: Truck), #6 (Type: Truck), #8(Type: Truck)]
+
+Vehicle #3(Northbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): []
+Waiting vehicles (Northbound): [#10 (Type: Truck), #6 (Type: Truck), #8 (Type: Truck), #3(Type: Truck)]
+
+Vehicle #9(Southbound, Type: Car) arrived.
+
+Vehicle #9 is now crossing the bridge.
+
+Vehicles on the bridge: [#4(Southbound, Type: Car), #1(Southbound, Type: Car), #2(Southbound, Type: Car), #5(Southbound, Type: Car), #7(Southbound, Type: Car), #9(Southbound, Type: Car)]. Total Weight:600
+
+Vehicle #9 exited the bridge. Total Weight:500
+
+Vehicle #5 exited the bridge. Total Weight:400
+
+Vehicle #7 exited the bridge. Total Weight:300
+
+Vehicle #2 exited the bridge. Total Weight:200
+
+Vehicle #11(Southbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): [#11(Type: Truck)]
+
+Waiting vehicles (Northbound): [#10 (Type: Truck), #6 (Type: Truck), #8 (Type: Truck), #3(Type: Truck)]
+
+Vehicle #1 exited the bridge. Total Weight:100
+
+Vehicle #4 exited the bridge. Total Weight:0
+
+Waiting vehicles (Southbound): [#11(Type: Truck)]
+
+Waiting vehicles (Northbound): [#10 (Type: Truck), #6 (Type: Truck), #8 (Type: Truck), #3(Type: Truck)]
+
+Vehicle #12(Southbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): [#11 (Type: Truck), #12(Type: Truck)]
+
+Waiting vehicles (Northbound): [#10 (Type: Truck), #6 (Type: Truck), #8 (Type: Truck), #3(Type: Truck)]
+
+Vehicle #17(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#11 (Type: Truck), #12 (Type: Truck), #17(Type: Car)]
+
+Waiting vehicles (Northbound): [#10 (Type: Truck), #6 (Type: Truck), #8 (Type: Truck), #3(Type: Truck)]
+
+Vehicle #15(Southbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): [#11 (Type: Truck), #12 (Type: Truck), #17 (Type: Car), #15(Type: Truck)]
+
+Waiting vehicles (Northbound): [#10 (Type: Truck), #6 (Type: Truck), #8 (Type: Truck), #3(Type: Truck)]
+
+Vehicle #13(Northbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): [#11 (Type: Truck), #12 (Type: Truck), #17 (Type: Car), #15(Type: Truck)]
+
+Waiting vehicles (Northbound): [#10 (Type: Truck), #6 (Type: Truck), #8 (Type: Truck), #3 (Type: Truck), #13(Type: Truck)]
+
+Vehicle #16(Southbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): [#11 (Type: Truck), #12 (Type: Truck), #17 (Type: Car), #15 (Type: Truck), #16(Type: Truck)]
+
+Waiting vehicles (Northbound): [#10 (Type: Truck), #6 (Type: Truck), #8 (Type: Truck), #3 (Type: Truck), #13(Type: Truck)]
+
+Vehicle #14(Southbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): [#11 (Type: Truck), #12 (Type: Truck), #17 (Type: Car), #15 (Type: Truck), #16 (Type: Truck), #14(Type: Truck)]
+
+Waiting vehicles (Northbound): [#10 (Type: Truck), #6 (Type: Truck), #8 (Type: Truck), #3 (Type: Truck), #13(Type: Truck)]
+
+Vehicle #18(Northbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): [#11 (Type: Truck), #12 (Type: Truck), #17 (Type: Car), #15 (Type: Truck), #16 (Type: Truck), #14(Type: Truck)]
+
+Waiting vehicles (Northbound): [#10 (Type: Truck), #6 (Type: Truck), #8 (Type: Truck), #3 (Type: Truck), #13 (Type: Truck), #18(Type: Truck)]
+
+Vehicle #19(Southbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): [#11 (Type: Truck), #12 (Type: Truck), #17 (Type: Car), #15 (Type: Truck), #16 (Type: Truck), #14 (Type: Truck), #19(Type: Truck)]
+
+Waiting vehicles (Northbound): [#10 (Type: Truck), #6 (Type: Truck), #8 (Type: Truck), #3 (Type: Truck), #13 (Type: Truck), #18(Type: Truck)]
+
+Vehicle #20(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#11 (Type: Truck), #12 (Type: Truck), #17 (Type: Car), #15 (Type: Truck), #16 (Type: Truck), #14 (Type: Truck), #19 (Type: Truck), #20(Type: Car)]
+
+Waiting vehicles (Northbound): [#10 (Type: Truck), #6 (Type: Truck), #8 (Type: Truck), #3 (Type: Truck), #13 (Type: Truck), #18(Type: Truck)]
+
+Vehicle #10 is now crossing the bridge.
+
+Vehicles on the bridge: [#10(Northbound, Type: Truck)]. Total Weight:300
+
+Vehicle #6 is now crossing the bridge.
+
+Vehicles on the bridge: [#10(Northbound, Type: Truck), #6(Northbound, Type: Truck)]. Total Weight:600
+
+Waiting vehicles (Southbound): [#11 (Type: Truck), #12 (Type: Truck), #17 (Type: Car), #15 (Type: Truck), #16 (Type: Truck), #14 (Type: Truck), #19 (Type: Truck), #20(Type: Car)]
+
+Waiting vehicles (Northbound): [#8 (Type: Truck), #3 (Type: Truck), #13 (Type: Truck), #18(Type: Truck)]
+
+Vehicle #6 exited the bridge. Total Weight:300
+
+Vehicle #8 is now crossing the bridge.
+
+Vehicles on the bridge: [#10(Northbound, Type: Truck), #8(Northbound, Type: Truck)]. Total Weight:600
+
+Waiting vehicles (Southbound): [#11 (Type: Truck), #12 (Type: Truck), #17 (Type: Car), #15 (Type: Truck), #16 (Type: Truck), #14 (Type: Truck), #19 (Type: Truck), #20(Type: Car)]
+
+Waiting vehicles (Northbound): [#3 (Type: Truck), #13 (Type: Truck), #18(Type: Truck)]
+
+Vehicle #27(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#11 (Type: Truck), #12 (Type: Truck), #17 (Type: Car), #15 (Type: Truck), #16 (Type: Truck), #14 (Type: Truck), #19 (Type: Truck), #20 (Type: Car), #27(Type: Car)]
+
+Waiting vehicles (Northbound): [#3 (Type: Truck), #13 (Type: Truck), #18(Type: Truck)]
+
+Vehicle #28(Southbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): [#11 (Type: Truck), #12 (Type: Truck), #17 (Type: Car), #15 (Type: Truck), #16 (Type: Truck), #14 (Type: Truck), #19 (Type: Truck), #20 (Type: Car), #27 (Type: Car), #28(Type: Truck)]
+
+Waiting vehicles (Northbound): [#3 (Type: Truck), #13 (Type: Truck), #18(Type: Truck)]
+
+Vehicle #24(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#11 (Type: Truck), #12 (Type: Truck), #17 (Type: Car), #15 (Type: Truck), #16 (Type: Truck), #14 (Type: Truck), #19 (Type: Truck), #20 (Type: Car), #27 (Type: Car), #28 (Type: Truck), #24(Type: Car)]
+
+Waiting vehicles (Northbound): [#3 (Type: Truck), #13 (Type: Truck), #18(Type: Truck)]
+
+Vehicle #25(Southbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): [#11 (Type: Truck), #12 (Type: Truck), #17 (Type: Car), #15 (Type: Truck), #16 (Type: Truck), #14 (Type: Truck), #19 (Type: Truck), #20 (Type: Car), #27 (Type: Car), #28 (Type: Truck), #24 (Type: Car), #25(Type: Truck)]
+
+Waiting vehicles (Northbound): [#3 (Type: Truck), #13 (Type: Truck), #18(Type: Truck)]
+
+Vehicle #26(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#11 (Type: Truck), #12 (Type: Truck), #17 (Type: Car), #15 (Type: Truck), #16 (Type: Truck), #14 (Type: Truck), #19 (Type: Truck), #20 (Type: Car), #27 (Type: Car), #28 (Type: Truck), #24 (Type: Car), #25 (Type: Truck), #26(Type: Car)]
+
+Waiting vehicles (Northbound): [#3 (Type: Truck), #13 (Type: Truck), #18(Type: Truck)]
+
+Vehicle #23(Southbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): [#11 (Type: Truck), #12 (Type: Truck), #17 (Type: Car), #15 (Type: Truck), #16 (Type: Truck), #14 (Type: Truck), #19 (Type: Truck), #20 (Type: Car), #27 (Type: Car), #28 (Type: Truck), #24 (Type: Car), #25 (Type: Truck), #26 (Type: Car), #23(Type: Truck)]
+
+Waiting vehicles (Northbound): [#3 (Type: Truck), #13 (Type: Truck), #18(Type: Truck)]
+
+Vehicle #22(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#11 (Type: Truck), #12 (Type: Truck), #17 (Type: Car), #15 (Type: Truck), #16 (Type: Truck), #14 (Type: Truck), #19 (Type: Truck), #20 (Type: Car), #27 (Type: Car), #28 (Type: Truck), #24 (Type: Car), #25 (Type: Truck), #26 (Type: Car), #23 (Type: Truck), #22(Type: Car)]
+
+Waiting vehicles (Northbound): [#3 (Type: Truck), #13 (Type: Truck), #18(Type: Truck)]
+
+Vehicle #10 exited the bridge. Total Weight:300
+
+Vehicle #3 is now crossing the bridge.
+
+Vehicles on the bridge: [#8(Northbound, Type: Truck), #3(Northbound, Type: Truck)]. Total Weight:600
+
+Vehicle #30(Northbound, Type: Truck) arrived.
+
+Waiting vehicles (Southbound): [#11 (Type: Truck), #12 (Type: Truck), #17 (Type: Car), #15 (Type: Truck), #16 (Type: Truck), #14 (Type: Truck), #19 (Type: Truck), #20 (Type: Car), #27 (Type: Car), #28 (Type: Truck), #24 (Type: Car), #25 (Type: Truck), #26 (Type: Car), #23 (Type: Truck), #22(Type: Car)]
+
+Waiting vehicles (Northbound): [#13 (Type: Truck), #18 (Type: Truck), #30(Type: Truck)]
+
+Waiting vehicles (Southbound): [#11 (Type: Truck), #12 (Type: Truck), #17 (Type: Car), #15 (Type: Truck), #16 (Type: Truck), #14 (Type: Truck), #19 (Type: Truck), #20 (Type: Car), #27 (Type: Car), #28 (Type: Truck), #24 (Type: Car), #25 (Type: Truck), #26 (Type: Car), #23 (Type: Truck), #22(Type: Car)]
+
+Waiting vehicles (Northbound): [#13 (Type: Truck), #18 (Type: Truck), #30(Type: Truck)]
+
+Vehicle #21(Northbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#11 (Type: Truck), #12 (Type: Truck), #17 (Type: Car), #15 (Type: Truck), #16 (Type: Truck), #14 (Type: Truck), #19 (Type: Truck), #20 (Type: Car), #27 (Type: Car), #28 (Type: Truck), #24 (Type: Car), #25 (Type: Truck), #26 (Type: Car), #23 (Type: Truck), #22(Type: Car)]
+
+Waiting vehicles (Northbound): [#13 (Type: Truck), #18 (Type: Truck), #30 (Type: Truck), #21(Type: Car)]
+
+Vehicle #29(Southbound, Type: Car) arrived.
+
+Waiting vehicles (Southbound): [#11 (Type: Truck), #12 (Type: Truck), #17 (Type: Car), #15 (Type: Truck), #16 (Type: Truck), #14 (Type: Truck), #19 (Type: Truck), #20 (Type: Car), #27 (Type: Car), #28 (Type: Truck), #24 (Type: Car), #25 (Type: Truck), #26 (Type: Car), #23 (Type: Truck), #22 (Type: Car), #29(Type: Car)]
+
+Waiting vehicles (Northbound): [#13 (Type: Truck), #18 (Type: Truck), #30 (Type: Truck), #21(Type: Car)]
+
+Vehicle #3 exited the bridge. Total Weight:300
+
+Vehicle #13 is now crossing the bridge.
+
+Vehicles on the bridge: [#8(Northbound, Type: Truck), #13(Northbound, Type: Truck)]. Total Weight:600
+
+Vehicle #8 exited the bridge. Total Weight:300
+
+Vehicle #18 is now crossing the bridge.
+
+Vehicles on the bridge: [#13(Northbound, Type: Truck), #18(Northbound, Type: Truck)]. Total Weight:600
+
+Waiting vehicles (Southbound): [#11 (Type: Truck), #12 (Type: Truck), #17 (Type: Car), #15 (Type: Truck), #16 (Type: Truck), #14 (Type: Truck), #19 (Type: Truck), #20 (Type: Car), #27 (Type: Car), #28 (Type: Truck), #24 (Type: Car), #25 (Type: Truck), #26 (Type: Car), #23 (Type: Truck), #22 (Type: Car), #29(Type: Car)]
+
+Waiting vehicles (Northbound): [#30 (Type: Truck), #21(Type: Car)]
+
+Vehicle #18 exited the bridge. Total Weight:300
+
+Vehicle #13 exited the bridge. Total Weight:0
+
+Waiting vehicles (Southbound): [#11 (Type: Truck), #12 (Type: Truck), #17 (Type: Car), #15 (Type: Truck), #16 (Type: Truck), #14 (Type: Truck), #19 (Type: Truck), #20 (Type: Car), #27 (Type: Car), #28 (Type: Truck), #24 (Type: Car), #25 (Type: Truck), #26 (Type: Car), #23 (Type: Truck), #22 (Type: Car), #29(Type: Car)]
+
+Waiting vehicles (Northbound): [#30 (Type: Truck), #21(Type: Car)]
+
+Vehicle #11 is now crossing the bridge.
+
+Vehicles on the bridge: [#11(Southbound, Type: Truck)]. Total Weight:300
+
+Vehicle #12 is now crossing the bridge.
+
+Vehicles on the bridge: [#11(Southbound, Type: Truck), #12(Southbound, Type: Truck)]. Total Weight:600
+
+Vehicle #17 is now crossing the bridge.
+
+Vehicles on the bridge: [#11(Southbound, Type: Truck), #12(Southbound, Type: Truck), #17(Southbound, Type: Car)]. Total Weight:700
+
+Waiting vehicles (Southbound): [#15 (Type: Truck), #16 (Type: Truck), #14 (Type: Truck), #19 (Type: Truck), #20 (Type: Car), #27 (Type: Car), #28 (Type: Truck), #24 (Type: Car), #25 (Type: Truck), #26 (Type: Car), #23 (Type: Truck), #22 (Type: Car), #29(Type: Car)]
+
+Waiting vehicles (Northbound): [#30 (Type: Truck), #21(Type: Car)]
+
+Vehicle #11 exited the bridge. Total Weight:400
+
+Vehicle #17 exited the bridge. Total Weight:300
+
+Vehicle #15 is now crossing the bridge.
+
+Vehicles on the bridge: [#12(Southbound, Type: Truck), #15(Southbound, Type: Truck)]. Total Weight:600
+
+Vehicle #12 exited the bridge. Total Weight:300
+
+Vehicle #16 is now crossing the bridge.
+
+Vehicles on the bridge: [#15(Southbound, Type: Truck), #16(Southbound, Type: Truck)]. Total Weight:600
+
+Waiting vehicles (Southbound): [#14 (Type: Truck), #19 (Type: Truck), #20 (Type: Car), #27 (Type: Car), #28 (Type: Truck), #24 (Type: Car), #25 (Type: Truck), #26 (Type: Car), #23 (Type: Truck), #22 (Type: Car), #29(Type: Car)]
+
+Waiting vehicles (Northbound): [#30 (Type: Truck), #21(Type: Car)]
+
+Vehicle #16 exited the bridge. Total Weight:300
+
+Vehicle #14 is now crossing the bridge.
+
+Vehicles on the bridge: [#15(Southbound, Type: Truck), #14(Southbound, Type: Truck)]. Total Weight:600
+
+Waiting vehicles (Southbound): [#19 (Type: Truck), #20 (Type: Car), #27 (Type: Car), #28 (Type: Truck), #24 (Type: Car), #25 (Type: Truck), #26 (Type: Car), #23 (Type: Truck), #22 (Type: Car), #29(Type: Car)]
+
+Waiting vehicles (Northbound): [#30 (Type: Truck), #21(Type: Car)]
+
+Vehicle #15 exited the bridge. Total Weight:300
+
+Waiting vehicles (Southbound): [#19 (Type: Truck), #20 (Type: Car), #27 (Type: Car), #28 (Type: Truck), #24 (Type: Car), #25 (Type: Truck), #26 (Type: Car), #23 (Type: Truck), #22 (Type: Car), #29(Type: Car)]
+
+Waiting vehicles (Northbound): [#30 (Type: Truck), #21(Type: Car)]
+
+Vehicle #14 exited the bridge. Total Weight:0
+
+Vehicle #30 is now crossing the bridge.
+
+Vehicles on the bridge: [#30(Northbound, Type: Truck)]. Total Weight:300
+
+Vehicle #21 is now crossing the bridge.
+
+Vehicles on the bridge: [#30(Northbound, Type: Truck), #21(Northbound, Type: Car)]. Total Weight:400
+
+Vehicle #21 exited the bridge. Total Weight:300
+
+Vehicle #30 exited the bridge. Total Weight:0
+
+Vehicle #19 is now crossing the bridge.
+
+Vehicles on the bridge: [#19(Southbound, Type: Truck)]. Total Weight:300
+
+Vehicle #20 is now crossing the bridge.
+
+Vehicles on the bridge: [#19(Southbound, Type: Truck), #20(Southbound, Type: Car)]. Total Weight:400
+
+Vehicle #27 is now crossing the bridge.
+
+Vehicles on the bridge: [#19(Southbound, Type: Truck), #20(Southbound, Type: Car), #27(Southbound, Type: Car)]. Total Weight:500
+
+Waiting vehicles (Southbound): [#28 (Type: Truck), #24 (Type: Car), #25 (Type: Truck), #26 (Type: Car), #23 (Type: Truck), #22 (Type: Car), #29(Type: Car)]
+
+Waiting vehicles (Northbound): []
+Vehicle #27 exited the bridge. Total Weight:400
+
+Vehicle #28 is now crossing the bridge.
+
+Vehicles on the bridge: [#19(Southbound, Type: Truck), #20(Southbound, Type: Car), #28(Southbound, Type: Truck)]. Total Weight:700
+
+Vehicle #20 exited the bridge. Total Weight:600
+
+Vehicle #19 exited the bridge. Total Weight:300
+
+Vehicle #24 is now crossing the bridge.
+
+Vehicles on the bridge: [#28(Southbound, Type: Truck), #24(Southbound, Type: Car)]. Total Weight:400
+
+Vehicle #25 is now crossing the bridge.
+
+Vehicles on the bridge: [#28(Southbound, Type: Truck), #24(Southbound, Type: Car), #25(Southbound, Type: Truck)]. Total Weight:700
+
+Waiting vehicles (Southbound): [#26 (Type: Car), #23 (Type: Truck), #22 (Type: Car), #29(Type: Car)]
+
+Waiting vehicles (Northbound): []
+Vehicle #28 exited the bridge. Total Weight:400
+
+Vehicle #25 exited the bridge. Total Weight:100
+
+Vehicle #26 is now crossing the bridge.
+
+Vehicles on the bridge: [#24(Southbound, Type: Car), #26(Southbound, Type: Car)]. Total Weight:200
+
+Vehicle #24 exited the bridge. Total Weight:100
+
+Vehicle #23 is now crossing the bridge.
+
+Vehicles on the bridge: [#26(Southbound, Type: Car), #23(Southbound, Type: Truck)]. Total Weight:400
+
+Vehicle #22 is now crossing the bridge.
+
+Vehicles on the bridge: [#26(Southbound, Type: Car), #23(Southbound, Type: Truck), #22(Southbound, Type: Car)]. Total Weight:500
+
+Vehicle #29 is now crossing the bridge.
+
+Vehicles on the bridge: [#26(Southbound, Type: Car), #23(Southbound, Type: Truck), #22(Southbound, Type: Car), #29(Southbound, Type: Car)]. Total Weight:600
+
+Vehicle #29 exited the bridge. Total Weight:500
+
+Vehicle #22 exited the bridge. Total Weight:400
+
+Vehicle #26 exited the bridge. Total Weight:300
+
+Vehicle #23 exited the bridge. Total Weight:0
